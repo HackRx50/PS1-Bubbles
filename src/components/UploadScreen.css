@@ -1,0 +1,128 @@
+.upload-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+
+  height: 100vh;
+  background-image: url('D:\Aditya\Competion\bajaj\documedic-app\src\topography.svg');
+  background-size: cover;
+  background-position: center;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #3B3B3B;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.left-content {
+  flex: 1;
+  text-align: left; 
+  justify-content: space-between;
+}
+
+.subtitle { 
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 80px;
+  color: #3B3B3B;
+}
+
+.button-group {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.icon-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #EE972A;
+  color: #F2F2F2;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-area {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  border: 2px dashed #EE972A;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #F2F2F2;
+}
+
+.file-label {
+  cursor: pointer;
+}
+
+.upload-text {
+  color: #3B3B3B;
+  text-align: center;
+  font-size: 18px;
+}
+
+.file-input {
+  display: none;
+}
+
+.next-button {
+  background-color: #EE972A;
+  color: #F2F2F2;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 400px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right-content {
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .upload-area, .next-button {
+    width: 100%;
+  }
+} 
