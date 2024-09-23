@@ -1,0 +1,1 @@
+You are given a image of a invoice , extact details from it format it in a csv , so that i can save it in a csv file

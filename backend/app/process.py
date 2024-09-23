@@ -1,9 +1,12 @@
 # app/process.py
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-import pytesseract
+import easyocr
 from PIL import Image
 import os
 import csv
+from utils.gemini import gemini_ocr
+from utils.utils import get_prompts
+reader = easyocr.Reader(['en'])
 
 process_blueprint = Blueprint('process', __name__)
 
@@ -39,14 +42,20 @@ def index():
             filepath = os.path.join(UPLOAD_FOLDER, uploaded_file.filename)
             uploaded_file.save(filepath)
             
-            # Extract text from the image using pytesseract
-            extracted_text = pytesseract.image_to_string(Image.open(filepath))
-            
+            # Extract text from the image using easyocr
+            extracted_text_easyocr = reader.readtext(filepath)
+            extracted_text_gemini = gemini_ocr(filepath, get_prompts('First.txt'))
+            final_text = gemini_ocr(image_path=filepath, prompt = get_prompts('Second.txt').replace("ocr1",str(extracted_text_easyocr)).replace("ocr2", str(extracted_text_gemini)))
             # Save extracted text to a CSV file
+            lines = final_text.split('\n')  # Split text into lines
+            csv_rows = [line.split(',') for line in lines]  # Split each line into columns
+            
+            # Write the rows to the CSV file
             csv_filename = 'extracted_text.csv'
             with open(csv_filename, mode='a', newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
-                writer.writerow([uploaded_file.filename, extracted_text])  # Corrected reference
+                for row in csv_rows:
+                    writer.writerow(row)   # Corrected reference
             
             flash(f'Text extracted and saved to {csv_filename}')
             return redirect(url_for('process.index'))
