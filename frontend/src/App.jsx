@@ -6,6 +6,8 @@ import { ResultsPage } from './pages/ResultsPage';
 import { SavedInvoicesPage } from './pages/SavedInvoicesPage';
 import { Navbar } from './components/Navbar';
 import "driver.js/dist/driver.css";
+import { ComparePage } from './pages/ComparePage';
+import ChatInterface from './pages/ChatInterface';
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
             <Route path="/confirm" element={<ConfirmationPage />} />
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/saved" element={<SavedInvoicesPage />} />
+            <Route path="/compare" element={<ComparePage />} />
+            <Route path="/chat" element={<ChatInterface />}/>
           </Routes>
         </div>
       </div>

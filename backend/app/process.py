@@ -1,18 +1,20 @@
 # app/process.py
-from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask import Blueprint, render_template, request, redirect, url_for, flash, send_file
 import easyocr
 from PIL import Image
 import os
 import csv
 from utils.gemini import gemini_ocr
 from utils.utils import get_prompts
-reader = easyocr.Reader(['en'])
+import time
+from config.config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
+
 
 process_blueprint = Blueprint('process', __name__)
 
 # Set the upload folder and allowed extensions
-UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+
+reader = easyocr.Reader(['en'])
 
 # Ensure the upload folder exists
 if not os.path.exists(UPLOAD_FOLDER):
@@ -22,7 +24,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@process_blueprint.route('/', methods=['GET', 'POST'])
+@process_blueprint.route('/process', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         # Check if a file was uploaded
@@ -51,13 +53,15 @@ def index():
             csv_rows = [line.split(',') for line in lines]  # Split each line into columns
             
             # Write the rows to the CSV file
-            csv_filename = 'extracted_text.csv'
-            with open(csv_filename, mode='a', newline='', encoding='utf-8') as csvfile:
+            csv_filename = os.path.join(UPLOAD_FOLDER, 'extracted_text.csv')
+            with open(csv_filename, mode='w', newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
                 for row in csv_rows:
                     writer.writerow(row)   # Corrected reference
-            
+                csvfile.close()
+            time.sleep(0.5)
             flash(f'Text extracted and saved to {csv_filename}')
-            return redirect(url_for('process.index'))
+            return send_file("../uploads/extracted_text.csv")
+            # return redirect(url_for('process.index'))
     
     return render_template('index.html')

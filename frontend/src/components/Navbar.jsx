@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Upload, Save } from 'lucide-react';
+import { FileText, Upload, Save,MessageSquareText } from 'lucide-react';
 
 export const Navbar = () => {
   return (
@@ -14,6 +14,7 @@ export const Navbar = () => {
           <div className="hidden md:flex space-x-6">
             <NavLink to="/" icon={<Upload />} text="Upload" />
             <NavLink to="/saved" icon={<Save />} text="Saved Invoices" />
+            <NavLink to ="/chat" icon={<MessageSquareText/>} text ="Chat" />
           </div>
         </div>
       </div>

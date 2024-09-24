@@ -3,9 +3,9 @@ import { FileText, Download, Eye } from 'lucide-react';
 
 export const SavedInvoicesPage = () => {
   const savedInvoices = [
-    { id: 1, name: 'Invoice 001', date: '2024-09-15', amount: '$1,234.56' },
-    { id: 2, name: 'Invoice 002', date: '2024-09-20', amount: '$2,345.67' },
-    { id: 3, name: 'Invoice 003', date: '2024-09-22', amount: '$3,456.78' },
+    { id: 1, name: 'Test1', date: '2024-09-24', amount: '' },
+    { id: 2, name: 'test2', date: '2024-09-24', amount: '' },
+    { id: 3, name: 'demo', date: '2024-09-24', amount: '' },
   ];
 
   return (

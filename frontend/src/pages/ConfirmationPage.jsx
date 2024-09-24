@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ArrowRight, RefreshCw } from 'lucide-react';
 import ConfirmationPageTutorial from './ConfirmationPageTutorial.jsx';
+// import { Upload, ArrowRight, RefreshCw } from 'lucide-react';
+import axios from 'axios';
 
 export const ConfirmationPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [rows, setRows] = useState('');
   const [columns, setColumns] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   // Assume the file object is passed through location state
   const file = location.state?.file;
@@ -16,12 +19,39 @@ export const ConfirmationPage = () => {
     navigate('/');
   };
 
-  const handleProcess = () => {
-    // Here you would typically send the file and optional row/column data to your backend
-    console.log('Processing file:', file?.name);
-    console.log('Rows:', rows);
-    console.log('Columns:', columns);
-    navigate('/results');
+  const handleProcess = async () => {
+    if (!file) return;
+
+    setIsLoading(true);
+
+    const formData = new FormData();
+    formData.append('file', file);
+    if (rows) formData.append('rows', rows);
+    if (columns) formData.append('columns', columns);
+
+    try {
+      const response = await axios.post('http://127.0.0.1:5000/process', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        },
+        responseType: 'blob' // Important for receiving binary data
+      });
+
+      // Create a Blob from the response data
+      const blob = new Blob([response.data], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+      
+      // Create a download URL for the Excel file
+      const downloadUrl = window.URL.createObjectURL(blob);
+
+      // Navigate to the ResultsPage with the download URL
+      navigate('/results', { state: { downloadUrl ,file} });
+
+    } catch (error) {
+      console.error('Error processing file:', error);
+      // Handle error (e.g., show an error message to the user)
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   if (!file) {
@@ -75,6 +105,7 @@ export const ConfirmationPage = () => {
             id="reupload-button"
             onClick={handleReupload}
             className="flex items-center justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+            disabled={isLoading}
           >
             <RefreshCw className="mr-2" size={20} />
             Reupload
@@ -83,9 +114,10 @@ export const ConfirmationPage = () => {
             id="process-button"
             onClick={handleProcess}
             className="flex-1 flex items-center justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            disabled={isLoading}
           >
-            Process Invoice
-            <ArrowRight className="ml-2" size={20} />
+            {isLoading ? 'Processing...' : 'Process Invoice'}
+            {!isLoading && <ArrowRight className="ml-2" size={20} />}
           </button>
         </div>
       </div>

@@ -17,6 +17,14 @@ const ResultsPageTutorial = () => {
           }
         },
         {
+          element:"#upload-button",
+          popover: {
+            title: 'Upload another invoice',
+            description: 'Click here to upload another invoice.',
+            position: 'top'
+          }
+        },
+        {
           element: '#download-button',
           popover: {
             title: 'Download Excel',
@@ -25,11 +33,20 @@ const ResultsPageTutorial = () => {
           }
         },
         {
-          element: '#save-button',
+          element: '#compare-button',
           popover: {
-            title: 'Save to Account',
-            description: 'Click here to save the processed invoice data to your account for future reference.',
+            title: 'Compare files',
+            description: 'Click here to Compare the uploaded invoice with the processed invoice.',
             position: 'top'
+          }
+        },
+       
+        {
+          element:"#save-button",
+          popover: {
+            title:"Save your invoice",
+            description:"Click here to save your invoice.",
+            position:"top"
           }
         }
       ]

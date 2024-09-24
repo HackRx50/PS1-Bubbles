@@ -1,20 +1,41 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Download, Save, CheckCircle } from 'lucide-react';
+import { useNavigate,useLocation } from 'react-router-dom';
+import { Download, Save, CheckCircle,ArrowLeft,Columns } from 'lucide-react';
 import ResultsPageTutorial from './ResultsPageTutorial.jsx';
-
 export const ResultsPage = () => {
   const [isSaved, setIsSaved] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const downloadUrl = location.state?.downloadUrl;
+  const file = location.state?.file; // Get the uploaded file from location state
 
   const handleDownload = () => {
-    console.log('Downloading Excel file');
+    if (downloadUrl) {
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.setAttribute('download', 'processed_invoice.csv');
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+  };
+
+  const handleBackToUpload = () => {
+    navigate('/');
   };
 
   const handleSave = () => {
-    console.log('Saving invoice data');
     setIsSaved(true);
+  }
+  const handleCompare = () => {
+    // Navigate to the compare page, passing the file and downloadUrl
+    navigate('/compare', { state: { file, downloadUrl } });
   };
+
+  if (!downloadUrl) {
+    navigate('/');
+    return null;
+  }
 
   return (
     <div className="relative max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -25,29 +46,50 @@ export const ResultsPage = () => {
           <h2 className="text-3xl font-bold text-gray-800">Invoice Processed Successfully</h2>
         </div>
         <p className="text-gray-600 mb-8 text-lg">
-          Great news! Your invoice has been successfully processed. You can now download the Excel sheet or save it to your account for future reference.
+          Great news! Your invoice has been successfully processed. You can now download the Excel sheet, upload another invoice, or compare the original image with the processed data.
         </p>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex space-x-4">
+          <button
+          id="upload-button"
+            onClick={handleBackToUpload}
+            className="flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          >
+            <ArrowLeft className="mr-2" size={24} />
+            Upload Another
+          </button>
           <button
             id="download-button"
             onClick={handleDownload}
-            className="flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-300"
+            className="flex-1 flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           >
-            <Download className="mr-2" size={24} />
             Download Excel
+            <Download className="ml-2" size={24} />
           </button>
           <button
-            id="save-button"
-            onClick={handleSave}
-            className={`flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white transition-colors duration-300 ${
-              isSaved
-                ? 'bg-green-600 hover:bg-green-700 focus:ring-green-500'
-                : 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500'
-            } focus:outline-none focus:ring-2 focus:ring-offset-2`}
+          id="compare-button"
+            onClick={handleCompare}
+            className="flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
-            {isSaved ? <CheckCircle className="mr-2" size={24} /> : <Save className="mr-2" size={24} />}
-            {isSaved ? 'Saved to Account' : 'Save to Account'}
+            Compare
+            <Columns className="ml-2" size={24} />
           </button>
+          <button
+      id="save-button"
+      onClick={handleSave}
+      className="flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+    >
+      {isSaved ? (
+        <>
+          Saved
+          <CheckCircle className="ml-2" size={24} />
+        </>
+      ) : (
+        <>
+          Save
+          <Save className="ml-2" size={24} />
+        </>
+      )}
+    </button>
         </div>
       </div>
     </div>
