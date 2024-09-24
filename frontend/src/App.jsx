@@ -5,6 +5,7 @@ import { ConfirmationPage } from './pages/ConfirmationPage';
 import { ResultsPage } from './pages/ResultsPage';
 import { SavedInvoicesPage } from './pages/SavedInvoicesPage';
 import { Navbar } from './components/Navbar';
+import "driver.js/dist/driver.css";
 
 const App = () => {
   return (
