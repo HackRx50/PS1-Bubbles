@@ -33,6 +33,14 @@ const ConfirmationPageTutorial = () => {
           }
         },
         {
+          element: '#documentType',
+          popover: {
+            title: 'Document Type',
+            description: 'Optionally, specify the type of document or invoice you\'re uploading for better processing results.',
+            position: 'top'
+          }
+        },
+        {
           element: '#reupload-button',
           popover: {
             title: 'Reupload Button',
