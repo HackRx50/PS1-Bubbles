@@ -8,6 +8,7 @@ export const ConfirmationPage = () => {
   const location = useLocation();
   const [rows, setRows] = useState('');
   const [columns, setColumns] = useState('');
+  const [documentType, setDocumentType] = useState('');
 
   // Assume the file object is passed through location state
   const file = location.state?.file;
@@ -17,10 +18,11 @@ export const ConfirmationPage = () => {
   };
 
   const handleProcess = () => {
-    // Here you would typically send the file and optional row/column data to your backend
+    // Here you would typically send the file and optional data to your backend
     console.log('Processing file:', file?.name);
     console.log('Rows:', rows);
     console.log('Columns:', columns);
+    console.log('Document Type:', documentType);
     navigate('/results');
   };
 
@@ -69,6 +71,19 @@ export const ConfirmationPage = () => {
               placeholder="Enter number of columns"
             />
           </div>
+        </div>
+        <div className="mb-8">
+          <label htmlFor="documentType" className="block text-sm font-medium text-gray-700 mb-2">
+            Document Type (optional)
+          </label>
+          <input
+            type="text"
+            id="documentType"
+            value={documentType}
+            onChange={(e) => setDocumentType(e.target.value)}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            placeholder="E.g., Sales Invoice, Purchase Order, Expense Report"
+          />
         </div>
         <div className="flex space-x-4">
           <button

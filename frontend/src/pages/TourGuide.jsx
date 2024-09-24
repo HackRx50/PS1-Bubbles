@@ -24,6 +24,14 @@ const TourGuide = () => {
           }
         },
         {
+          element: 'button[title="Change Theme"]',
+          popover: {
+            title: 'Change Theme',
+            description: 'Click this eye icon to change the color theme. This feature helps users with color blindness to see the interface more clearly.',
+            position: 'left'
+          }
+        },
+        {
           element: 'a[href="/saved"]',
           popover: {
             title: 'Saved Invoices',
@@ -31,6 +39,7 @@ const TourGuide = () => {
             position: 'bottom'
           }
         }
+        
       ]
     })
   );
