@@ -31,7 +31,7 @@ export const ConfirmationPage = () => {
     if (columns) formData.append('columns', columns);
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/process', formData, {
+      const response = await axios.post('/api/process', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         },

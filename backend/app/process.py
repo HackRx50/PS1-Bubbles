@@ -24,7 +24,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@process_blueprint.route('/process', methods=['GET', 'POST'])
+@process_blueprint.route('/api/process', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         # Check if a file was uploaded
