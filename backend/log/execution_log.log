@@ -6019,3 +6019,718 @@ Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': 
 Response: <Response streamed [200 OK]>
 -------------------------------------
 2024-10-12 23:04:34 - 127.0.0.1 - - [12/Oct/2024 23:04:34] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:18:52 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:18:56 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:18:56 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:18:56 -  * Restarting with stat
+2024-10-13 01:19:07 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:19:12 -  * Debugger is active!
+2024-10-13 01:19:12 -  * Debugger PIN: 109-828-752
+2024-10-13 01:19:12 - 127.0.0.1 - - [13/Oct/2024 01:19:12] "[36mGET / HTTP/1.1[0m" 304 -
+2024-10-13 01:19:12 - 127.0.0.1 - - [13/Oct/2024 01:19:12] "[36mGET /assets/index-gqYtJVAx.css HTTP/1.1[0m" 304 -
+2024-10-13 01:19:12 - 127.0.0.1 - - [13/Oct/2024 01:19:12] "[36mGET /assets/index-DmGivMUQ.js HTTP/1.1[0m" 304 -
+2024-10-13 01:19:26 - 127.0.0.1 - - [13/Oct/2024 01:19:26] "[36mGET / HTTP/1.1[0m" 304 -
+2024-10-13 01:19:26 - 127.0.0.1 - - [13/Oct/2024 01:19:26] "[36mGET /assets/index-DmGivMUQ.js HTTP/1.1[0m" 304 -
+2024-10-13 01:19:26 - 127.0.0.1 - - [13/Oct/2024 01:19:26] "[36mGET /assets/index-gqYtJVAx.css HTTP/1.1[0m" 304 -
+2024-10-13 01:19:50 - Function: gemini_ocr
+Execution Time: 12.766387 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amoount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: item_name,item_price,item_subcategory,sub_category_amoount
+ADMISSION (NME),450.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BED CHARGES - WARD,2,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00
+-------------------------------------
+2024-10-13 01:19:55 - Function: gemini_ocr
+Execution Time: 5.698104 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{item_name,item_price,item_subcategory,sub_category_amoount\nADMISSION (NME),450.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBED CHARGES - WARD,2,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should n=be no comma in name also replace comma with hyphen in name\n5. thoroighly check sub_category_amoount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amoount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amoount,confidence
+ADMISSION (NME),450.00,Administrative,6160.00,95
+DIET CHARGES,350.00,Administrative,6160.00,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6160.00,95
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,6160.00,95
+DIET CHARGES,350.00,Administrative,6160.00,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,95
+DIET CHARGES,350.00,Administrative,6160.00,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,95
+DIET CHARGES,390.00,Administrative,6160.00,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,95
+DIET CHARGES,350.00,Administrative,6160.00,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,95
+BED CHARGES - WARD,2500.00,Bed Charges,34000.00,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,95
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820.00,95
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2820.00,95
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820.00,95
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820.00,95
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500.00,95
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,1500.00,95
+
+-------------------------------------
+2024-10-13 01:19:56 - Function: index
+Execution Time: 19.089317 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:19:56 - 127.0.0.1 - - [13/Oct/2024 01:19:56] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:24:12 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:24:16 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:24:16 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:24:16 -  * Restarting with stat
+2024-10-13 01:24:26 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:24:30 -  * Debugger is active!
+2024-10-13 01:24:30 -  * Debugger PIN: 109-828-752
+2024-10-13 01:24:42 - Function: gemini_ocr
+Execution Time: 12.043618 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+ADMISSION (NME),450.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BED CHARGES - WARD,2,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00
+-------------------------------------
+2024-10-13 01:24:47 - Function: gemini_ocr
+Execution Time: 5.731933 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{item_name,item_price,item_subcategory,sub_category_amount\nADMISSION (NME),450.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBED CHARGES - WARD,2,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should n=be no comma in name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount,confidence
+ADMISSION (NME),450.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6160.00,90
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BED CHARGES - WARD,2500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP), COMPONENT,1150.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP), COMPONENT,1150.00,Blood Components,2820.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,1500.00,90
+-------------------------------------
+2024-10-13 01:24:48 - Function: index
+Execution Time: 18.341432 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:24:48 - 127.0.0.1 - - [13/Oct/2024 01:24:48] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:29:37 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:29:41 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:29:41 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:29:41 -  * Restarting with stat
+2024-10-13 01:29:51 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:29:55 -  * Debugger is active!
+2024-10-13 01:29:55 -  * Debugger PIN: 109-828-752
+2024-10-13 01:30:07 - Function: gemini_ocr
+Execution Time: 12.599997 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: ```csv
+item_name,item_price,item_subcategory,sub_category_amount
+ADMISSION (NME),450.00,Administrative,null
+DIET CHARGES,350.00,Administrative,null
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,null
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,null
+DIET CHARGES,350.00,Administrative,null
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null
+DIET CHARGES,350.00,Administrative,null
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null
+DIET CHARGES,390.00,Administrative,null
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null
+DIET CHARGES,350.00,Administrative,null
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null
+BED CHARGES - WARD,2,500.00,Bed Charges,6,160.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,null
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,null
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,null
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,null
+```
+-------------------------------------
+2024-10-13 01:30:14 - Function: gemini_ocr
+Execution Time: 6.619007 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{```csv\nitem_name,item_price,item_subcategory,sub_category_amount\nADMISSION (NME),450.00,Administrative,null\nDIET CHARGES,350.00,Administrative,null\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,null\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,null\nDIET CHARGES,350.00,Administrative,null\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null\nDIET CHARGES,350.00,Administrative,null\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null\nDIET CHARGES,390.00,Administrative,null\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null\nDIET CHARGES,350.00,Administrative,null\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null\nBED CHARGES - WARD,2,500.00,Bed Charges,6,160.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,null\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,null\nFRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,null\nFRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,null\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,null\n```} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should n=be no comma in name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: ```csv
+item_name,item_price,item_subcategory,sub_category_amount,confidence
+ADMISSION (NME),450.00,Administrative,null,100
+DIET CHARGES,350.00,Administrative,null,100
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,null,100
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,null,100
+DIET CHARGES,350.00,Administrative,null,100
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null,100
+DIET CHARGES,350.00,Administrative,null,100
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null,100
+DIET CHARGES,390.00,Administrative,null,100
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null,100
+DIET CHARGES,350.00,Administrative,null,100
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null,100
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null,100
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,null,100
+BED CHARGES - WARD,2500.00,Bed Charges,6160.00,100
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,null,100
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,null,100
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,null,100
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,null,100
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,null,100
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,null,100
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,null,100
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820.00,100
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,null,100
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,null,100
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,null,100
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500.00,100
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,null,100
+```
+-------------------------------------
+2024-10-13 01:30:15 - Function: index
+Execution Time: 19.769874 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:30:15 - 127.0.0.1 - - [13/Oct/2024 01:30:15] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:30:42 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\utils\\utils.py', reloading
+2024-10-13 01:30:54 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:30:58 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:30:58 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:30:58 -  * Restarting with stat
+2024-10-13 01:31:09 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:31:12 -  * Debugger is active!
+2024-10-13 01:31:12 -  * Debugger PIN: 109-828-752
+2024-10-13 01:31:24 - Function: gemini_ocr
+Execution Time: 12.145088 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+ADMISSION (NME),450.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BED CHARGES - WARD,2,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00
+-------------------------------------
+2024-10-13 01:31:31 - Function: gemini_ocr
+Execution Time: 6.645946 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{item_name,item_price,item_subcategory,sub_category_amount\nADMISSION (NME),450.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBED CHARGES - WARD,2,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should n=be no comma in name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount,confidence
+ADMISSION (NME),450.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6160.00,90
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BED CHARGES - WARD,2500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,1500.00,90
+
+-------------------------------------
+2024-10-13 01:31:32 - Function: index
+Execution Time: 19.406265 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:31:32 - 127.0.0.1 - - [13/Oct/2024 01:31:32] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:33:54 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:33:58 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:33:58 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:33:58 -  * Restarting with stat
+2024-10-13 01:34:09 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:34:12 -  * Debugger is active!
+2024-10-13 01:34:12 -  * Debugger PIN: 109-828-752
+2024-10-13 01:34:25 - Function: gemini_ocr
+Execution Time: 13.143719 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+ADMISSION (NME),450.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BED CHARGES - WARD,2,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00
+-------------------------------------
+2024-10-13 01:34:32 - Function: gemini_ocr
+Execution Time: 6.775471 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{item_name,item_price,item_subcategory,sub_category_amount\nADMISSION (NME),450.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBED CHARGES - WARD,2,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should n=be no comma in name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount,confidence
+ADMISSION (NME),450.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6160.00,90
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BED CHARGES - WARD,2500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP), COMPONENT,1150.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP), COMPONENT,1150.00,Blood Components,2820.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,1500.00,90
+-------------------------------------
+2024-10-13 01:34:32 - Function: index
+Execution Time: 20.469321 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:34:32 - 127.0.0.1 - - [13/Oct/2024 01:34:32] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:37:34 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:37:38 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:37:38 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:37:38 -  * Restarting with stat
+2024-10-13 01:37:49 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:37:52 -  * Debugger is active!
+2024-10-13 01:37:53 -  * Debugger PIN: 109-828-752
+2024-10-13 01:38:04 - Function: gemini_ocr
+Execution Time: 11.648526 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+ADMISSION (NME),450.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BED CHARGES - WARD,2,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00
+-------------------------------------
+2024-10-13 01:38:09 - Function: gemini_ocr
+Execution Time: 5.116948 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{item_name,item_price,item_subcategory,sub_category_amount\nADMISSION (NME),450.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBED CHARGES - WARD,2,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP) - COMPONENT,1,150.00,Blood Components,2,820.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount,confidence
+ADMISSION (NME),450.00,Administrative,6160,95
+DIET CHARGES,350.00,Administrative,6160,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6160,95
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,6160,95
+DIET CHARGES,350.00,Administrative,6160,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,95
+DIET CHARGES,350.00,Administrative,6160,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,95
+DIET CHARGES,390.00,Administrative,6160,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,95
+DIET CHARGES,350.00,Administrative,6160,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,95
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,95
+BED CHARGES - WARD,2500.00,Bed Charges,34000,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,95
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,95
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820,95
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2820,95
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820,95
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820,95
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500,95
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,1500,95
+-------------------------------------
+2024-10-13 01:38:10 - Function: index
+Execution Time: 17.322004 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:38:10 - 127.0.0.1 - - [13/Oct/2024 01:38:10] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:38:55 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\utils\\utils.py', reloading
+2024-10-13 01:38:56 -  * Restarting with stat
+2024-10-13 01:39:14 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:39:18 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:39:18 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:39:18 -  * Restarting with stat
+2024-10-13 01:39:29 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:39:32 -  * Debugger is active!
+2024-10-13 01:39:32 -  * Debugger PIN: 109-828-752
+2024-10-13 01:39:44 - Function: gemini_ocr
+Execution Time: 11.693083 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+ADMISSION (NME),450.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,350.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,380.00,Administrative,6,160.00
+BED CHARGES - WARD,2,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00
+-------------------------------------
+2024-10-13 01:39:50 - Function: gemini_ocr
+Execution Time: 5.689059 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{item_name,item_price,item_subcategory,sub_category_amount\nADMISSION (NME),450.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,350.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,380.00,Administrative,6,160.00\nBED CHARGES - WARD,2,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount,confidence
+ADMISSION (NME),450.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6160.00,90
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,350.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+DIET CHARGES,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,350.00,Administrative,6160.00,90
+DIET CHARGES,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160.00,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,380.00,Administrative,6160.00,90
+BED CHARGES - WARD,2500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000.00,90
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820.00,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500.00,90
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,1500.00,90
+-------------------------------------
+2024-10-13 01:39:50 - Function: index
+Execution Time: 17.993946 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:39:50 - 127.0.0.1 - - [13/Oct/2024 01:39:50] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:46:51 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:46:54 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:46:54 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:46:54 -  * Restarting with stat
+2024-10-13 01:47:05 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:47:08 -  * Debugger is active!
+2024-10-13 01:47:08 -  * Debugger PIN: 109-828-752
+2024-10-13 01:47:22 - Function: gemini_ocr
+Execution Time: 13.706277 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+ADMISSION (NME),450.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00
+PRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+DIET CHARGES,350.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00
+BED CHARGES - WARD,2,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+FRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00
+CONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00
+-------------------------------------
+2024-10-13 01:47:37 - Function: gemini_ocr
+Execution Time: 14.854780 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001895_E-NEEL2905_240529_0858@E.pdf_1.png', 'prompt': '\n\n\nyou are given a csv file here :{item_name,item_price,item_subcategory,sub_category_amount\nADMISSION (NME),450.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6,160.00\nPRE ANAESTHESIA CHECK UP,1,210.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nDIET CHARGES,350.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6,160.00\nBED CHARGES - WARD,2,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBED CHARGES - CRITICAL CARE AREA,4,500.00,Bed Charges,34,000.00\nBLOOD GROUP & RH TYPING,120.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,400.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nFRESH FROZEN PLASMA (FFP), COMPONENT,1,150.00,Blood Components,2,820.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,300.00,Consultation,1,500.00\nCONSULTATION - IP - Dr. Priya Pradhan,1,500.00,Consultation,1,500.00} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount,confidence
+ADMISSION (NME),450.00,Administrative,6160,90
+DIET CHARGES,350.00,Administrative,6160,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,370.00,Administrative,6160,90
+PRE ANAESTHESIA CHECK UP,1210.00,Administrative,6160,90
+DIET CHARGES,350.00,Administrative,6160,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,90
+DIET CHARGES,350.00,Administrative,6160,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,90
+DIET CHARGES,390.00,Administrative,6160,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,90
+DIET CHARGES,350.00,Administrative,6160,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,90
+BIOMEDICAL WASTE MANAGEMENT SERVICE,390.00,Administrative,6160,90
+BED CHARGES - WARD,2500.00,Bed Charges,34000,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,90
+BED CHARGES - CRITICAL CARE AREA,4500.00,Bed Charges,34000,90
+BLOOD GROUP & RH TYPING,120.00,Blood Components,2820,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,400.00,Blood Components,2820,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820,90
+FRESH FROZEN PLASMA (FFP) - COMPONENT,1150.00,Blood Components,2820,90
+CONSULTATION - IP - Dr. Priya Pradhan,1300.00,Consultation,1500,90
+CONSULTATION - IP - Dr. Priya Pradhan,1500.00,Consultation,1500,90
+-------------------------------------
+2024-10-13 01:47:38 - Function: index
+Execution Time: 29.113324 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:47:38 - 127.0.0.1 - - [13/Oct/2024 01:47:38] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 01:51:17 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:51:21 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 01:51:21 - [33mPress CTRL+C to quit[0m
+2024-10-13 01:51:21 -  * Restarting with stat
+2024-10-13 01:51:32 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 01:51:35 -  * Debugger is active!
+2024-10-13 01:51:35 -  * Debugger PIN: 109-828-752
+2024-10-13 01:51:56 - Function: gemini_ocr
+Execution Time: 15.979593 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INITAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 01:52:03 - Function: gemini_ocr
+Execution Time: 6.654812 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'prompt': '\n\n\nyou are given a csv file here :{S.NO,Name,item_price,item_subcategory,sub_category_amount\n1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00\n2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00\n3,INITAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00\n4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00\n5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00\n6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null\n10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null\n11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null\n12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null\n13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null\n14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null\n15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount,confidence
+1,PICU BEDCHARGES.,202470.00,BED CHARGES,202470.00,100
+2,AUTOIMMUNE ENCEPHALITIS PANEL-CSF,23374.00,INVESTIGATION CHARGES,23374.00,100
+3,INITAL ASSESSMENT CHARGES,1000.00,CONSULTATION,1000.00,100
+4,PICU NURSING CHARGES,44030.00,NURSING CHARGES,44030.00,100
+5,PICU CONSULTATION CHARGES,52870.00,DOCTOR CHARGES,52870.00,100
+6,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+7,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+8,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null,75
+10,LUMBAR PUNCTURE,2740.00,OPIP PROCEDURE CHARGES,null,75
+11,INFECTION PREVENTIVE MEASURE CHARGES,3680.00,OPIP PROCEDURE CHARGES,null,75
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null,75
+13,MRI BRAIN PLAIN,10000.00,OPIP PROCEDURE CHARGES,null,75
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18500.00,OPIP PROCEDURE CHARGES,null,75
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+21,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+22,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+23,CENTRAL LINE PLACEMENT,4900.00,OPIP PROCEDURE CHARGES,null,75
+-------------------------------------
+2024-10-13 01:52:03 - Function: index
+Execution Time: 23.228768 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 01:52:03 - 127.0.0.1 - - [13/Oct/2024 01:52:03] "POST /api/process HTTP/1.1" 200 -

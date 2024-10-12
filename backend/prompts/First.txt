@@ -3,7 +3,7 @@ Given a photo of a invoice
 follow given instructions:
 1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)
 2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)
-3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amoount
+3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount
 4. Put null if something is not avaialable
 
 

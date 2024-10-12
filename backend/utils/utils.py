@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from config.config import UPLOAD_FOLDER
-
+import json
 
 file_path = os.path.join(UPLOAD_FOLDER, 'extracted_text.csv')
 # print(file_path)
@@ -23,46 +23,54 @@ def get_prompts(filename):
         return f.read()
 
 
-def calculate_subcategory_amounts():
+def calculate_subcategory_amounts(csv_rows):
     """
-    Reads a CSV file and calculates the total of each subcategory
+    Calculates the total of each subcategory from a list of CSV rows by matching columns by name.
 
     Parameters
     ----------
-    file_path : str
-        path to the CSV file
+    csv_rows : list of lists
+        A list where the first row contains the column names, and the subsequent rows contain the data.
 
     Returns
     -------
-    pandas.DataFrame
-        a DataFrame with the subcategory amounts
+    pandas.DataFrame or None
+        A DataFrame with the subcategory amounts, or None if an error occurs.
     """
     try:
-        # Read the CSV file into a pandas DataFrame
-        f = os.getcwd() + "\\uploads\\extracted_text.csv"
-        print(os.getcwd())
-        df = pd.read_csv(f)
-        
-        # Group by 'item_subcategory' and sum the 'item_amount' for each subcategory
+        # print(csv_rows)
+        # Convert the list of CSV rows into a pandas DataFrame using the first row as the header
+        df = pd.DataFrame(csv_rows[1:], columns=csv_rows[0])
+
+        # Ensure the required columns are present
+        required_columns = ['item_subcategory', 'item_price', 'sub_category_amount']
+        for col in required_columns:
+            if col not in df.columns:
+                raise ValueError(f"Missing required column: {col}")
+
+        # Convert 'item_price' to numeric (handling potential errors)
+        df['item_price'] = pd.to_numeric(df['item_price'], errors='coerce')
+
+        # Handle missing values (e.g., NaN) by filling them with 0 for summation
+        df['item_price'].fillna(0, inplace=True)
+
+        # Group by 'item_subcategory' and sum the 'item_price' for each subcategory
         result = df.groupby('item_subcategory').agg(
-            total_item_amount=('item_amount', 'sum'),
-            sub_category_amount=('sub_category_amount', 'first')  # Since sub_category_amount is the same, just take the first occurrence
+            total_item_price=('item_price', 'sum'),
+            sub_category_amount=('sub_category_amount', 'first')  # Assuming sub_category_amount is the same, take the first occurrence
         ).reset_index()
-        
-        return result
-    except FileNotFoundError:
-        print(f"Error: The file {f} does not exist.")
-        return None
-    except pd.errors.EmptyDataError:
-        print(f"Error: The file {f} is empty.")
-        return None
-    except pd.errors.ParserError:
-        print(f"Error: The file {f} is not a valid CSV file.")
+        result_dict = result.to_dict(orient='records')
+
+    # Return as a JSON response
+        return json.dumps(result_dict)
+        # return result
+
+    except ValueError as e:
+        print(f"Error: {e}")
         return None
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An unexpected error occurred: {e}")
         return None
-
 
 if __name__ == "__main__":
     calculate_subcategory_amounts()

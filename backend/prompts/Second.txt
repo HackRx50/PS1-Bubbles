@@ -8,8 +8,8 @@ follow the intructions
 1. check only 4 columns should be there 
 2. check csv against image , no duplicates or errors should be there 
 3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value
-4. numerical values should without comma example - 7,656 will be 7657 and there should n=be no comma in name also replace comma with hyphen in name
-5. thoroighly check sub_category_amoount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amoount with null for that category or add the item_price for that category and put less than 75 confidence
+4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name
+5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence
 6. return a csv only with only these columns , no comments
 
 Can you please carefully analyze the asset and transcribe it: it is very hard to read and you must 

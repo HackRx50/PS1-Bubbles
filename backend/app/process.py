@@ -9,10 +9,14 @@ from utils.utils import get_prompts,calculate_subcategory_amounts
 import time
 from config.config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
 from utils.decorators import time_it,log_api_runtime
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
+
+
+
+# ==================================================================================================================================
 process_blueprint = Blueprint('process', __name__)
-
-# Set the upload folder and allowed extensions
 
 reader = easyocr.Reader(['en'])
 
@@ -64,7 +68,7 @@ def index():
                 csvfile.close()
             # with open(csv_filename, mode='r', newline='', encoding='utf-8') as csvreader:
             time.sleep(0.5)
-            print(calculate_subcategory_amounts())
+            print(calculate_subcategory_amounts(csv_rows))
             
             flash(f'Text extracted and saved to {csv_filename}')
             return send_file("../uploads/extracted_text.csv")
