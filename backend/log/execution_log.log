@@ -6734,3 +6734,353 @@ Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': 
 Response: <Response streamed [200 OK]>
 -------------------------------------
 2024-10-13 01:52:03 - 127.0.0.1 - - [13/Oct/2024 01:52:03] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 02:23:56 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:24:01 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 02:24:01 - [33mPress CTRL+C to quit[0m
+2024-10-13 02:24:01 -  * Restarting with stat
+2024-10-13 02:24:12 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:24:16 -  * Debugger is active!
+2024-10-13 02:24:16 -  * Debugger PIN: 109-828-752
+2024-10-13 02:24:29 - Function: gemini_ocr
+Execution Time: 13.221901 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 02:24:36 - Function: gemini_ocr
+Execution Time: 6.825347 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'prompt': '\n\n\nyou are given a csv file here :{S.NO,Name,item_price,item_subcategory,sub_category_amount\n1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00\n2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00\n3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00\n4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00\n5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00\n6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null\n10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null\n11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null\n12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null\n13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null\n14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null\n15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount,confidence
+1,PICU BEDCHARGES.,202470.00,BED CHARGES,202470.00,90
+2,AUTOIMMUNE ENCEPHALITIS PANEL-CSF,23374.00,INVESTIGATION CHARGES,23374.00,90
+3,INTAL ASSESSMENT CHARGES,1000.00,CONSULTATION,1000.00,90
+4,PICU NURSING CHARGES,44030.00,NURSING CHARGES,44030.00,90
+5,PICU CONSULTATION CHARGES,52870.00,DOCTOR CHARGES,52870.00,90
+6,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+7,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+8,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null,75
+10,LUMBAR PUNCTURE,2740.00,OPIP PROCEDURE CHARGES,null,75
+11,INFECTION PREVENTIVE MEASURE CHARGES,3680.00,OPIP PROCEDURE CHARGES,null,75
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null,75
+13,MRI BRAIN PLAIN,10000.00,OPIP PROCEDURE CHARGES,null,75
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18500.00,OPIP PROCEDURE CHARGES,null,75
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+21,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+22,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+23,CENTRAL LINE PLACEMENT,4900.00,OPIP PROCEDURE CHARGES,null,75
+-------------------------------------
+2024-10-13 02:24:37 - 127.0.0.1 - - [13/Oct/2024 02:24:37] "[35m[1mPOST /api/process HTTP/1.1[0m" 500 -
+2024-10-13 02:24:56 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 02:24:57 -  * Restarting with stat
+2024-10-13 02:25:25 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:25:28 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 02:25:28 - [33mPress CTRL+C to quit[0m
+2024-10-13 02:25:28 -  * Restarting with stat
+2024-10-13 02:25:40 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:25:44 -  * Debugger is active!
+2024-10-13 02:25:44 -  * Debugger PIN: 109-828-752
+2024-10-13 02:25:56 - Function: gemini_ocr
+Execution Time: 12.370209 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTIAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 02:26:03 - Function: gemini_ocr
+Execution Time: 6.850426 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'prompt': '\n\n\nyou are given a csv file here :{S.NO,Name,item_price,item_subcategory,sub_category_amount\n1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00\n2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00\n3,INTIAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00\n4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00\n5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00\n6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null\n10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null\n11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null\n12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null\n13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null\n14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null\n15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there \n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount,confidence
+1,PICU BEDCHARGES.,202470.00,BED CHARGES,202470.00,90
+2,AUTOIMMUNE ENCEPHALITIS PANEL-CSF,23374.00,INVESTIGATION CHARGES,23374.00,90
+3,INTIAL ASSESSMENT CHARGES,1000.00,CONSULTATION,1000.00,90
+4,PICU NURSING CHARGES,44030.00,NURSING CHARGES,44030.00,90
+5,PICU CONSULTATION CHARGES,52870.00,DOCTOR CHARGES,52870.00,90
+6,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+7,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+8,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null,75
+10,LUMBAR PUNCTURE,2740.00,OPIP PROCEDURE CHARGES,null,75
+11,INFECTION PREVENTIVE MEASURE CHARGES,3680.00,OPIP PROCEDURE CHARGES,null,75
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null,75
+13,MRI BRAIN PLAIN,10000.00,OPIP PROCEDURE CHARGES,null,75
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18500.00,OPIP PROCEDURE CHARGES,null,75
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+21,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+22,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+23,CENTRAL LINE PLACEMENT,4900.00,OPIP PROCEDURE CHARGES,null,75
+
+-------------------------------------
+2024-10-13 02:26:04 - Function: index
+Execution Time: 19.793504 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 02:26:04 - 127.0.0.1 - - [13/Oct/2024 02:26:04] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 02:28:24 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:28:27 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 02:28:27 - [33mPress CTRL+C to quit[0m
+2024-10-13 02:28:27 -  * Restarting with stat
+2024-10-13 02:28:39 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:28:43 -  * Debugger is active!
+2024-10-13 02:28:43 -  * Debugger PIN: 109-828-752
+2024-10-13 02:28:56 - Function: gemini_ocr
+Execution Time: 13.262006 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTIAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 02:29:02 - Function: gemini_ocr
+Execution Time: 6.548001 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'prompt': '\n\n\nyou are given a csv file here :{S.NO,Name,item_price,item_subcategory,sub_category_amount\n1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00\n2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00\n3,INTIAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00\n4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00\n5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00\n6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null\n10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null\n11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null\n12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null\n13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null\n14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null\n15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there named item_name,item_price,item_subcategory,sub_category_amount if not make it only these columns\n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: S.NO,item_name,item_price,item_subcategory,sub_category_amount,confidence
+1,PICU BEDCHARGES.,202470.00,BED CHARGES,202470.00,100
+2,AUTOIMMUNE ENCEPHALITIS PANEL-CSF,23374.00,INVESTIGATION CHARGES,23374.00,100
+3,INTIAL ASSESSMENT CHARGES,1000.00,CONSULTATION,1000.00,100
+4,PICU NURSING CHARGES,44030.00,NURSING CHARGES,44030.00,100
+5,PICU CONSULTATION CHARGES,52870.00,DOCTOR CHARGES,52870.00,100
+6,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+7,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+8,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null,75
+10,LUMBAR PUNCTURE,2740.00,OPIP PROCEDURE CHARGES,null,75
+11,INFECTION PREVENTIVE MEASURE CHARGES,3680.00,OPIP PROCEDURE CHARGES,null,75
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null,75
+13,MRI BRAIN PLAIN,10000.00,OPIP PROCEDURE CHARGES,null,75
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18500.00,OPIP PROCEDURE CHARGES,null,75
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+21,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+22,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+23,CENTRAL LINE PLACEMENT,4900.00,OPIP PROCEDURE CHARGES,null,75
+-------------------------------------
+2024-10-13 02:29:03 - Function: index
+Execution Time: 20.347546 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 02:29:03 - 127.0.0.1 - - [13/Oct/2024 02:29:03] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 02:40:30 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\utils\\utils.py', reloading
+2024-10-13 02:40:31 -  * Restarting with stat
+2024-10-13 02:40:48 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:40:52 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 02:40:52 - [33mPress CTRL+C to quit[0m
+2024-10-13 02:40:52 -  * Restarting with stat
+2024-10-13 02:41:03 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:41:07 -  * Debugger is active!
+2024-10-13 02:41:07 -  * Debugger PIN: 109-828-752
+2024-10-13 02:41:19 - Function: gemini_ocr
+Execution Time: 11.830038 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: S.NO,Name,item_name,item_price,item_subcategory,sub_category_amount
+1,BED CHARGES,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,INVESTIGATION CHARGES,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,CONSULTATION,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,NURSING CHARGES,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,DOCTOR CHARGES,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,OPIP PROCEDURE CHARGES,CONSCIOUS SEDATION,1,130.00,null,null
+7,OPIP PROCEDURE CHARGES,CONSCIOUS SEDATION,1,130.00,null,null
+8,OPIP PROCEDURE CHARGES,CONSCIOUS SEDATION,1,130.00,null,null
+9,OPIP PROCEDURE CHARGES,CATHETERISATION,540.00,null,null
+10,OPIP PROCEDURE CHARGES,LUMBAR PUNCTURE,2,740.00,null,null
+11,OPIP PROCEDURE CHARGES,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,null,null
+12,OPIP PROCEDURE CHARGES,INSURANCE PROCESSING FEE,500.00,null,null
+13,OPIP PROCEDURE CHARGES,MRI BRAIN PLAIN,10,000.00,null,null
+14,OPIP PROCEDURE CHARGES,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,null,null
+15,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null
+16,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null
+17,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null
+18,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null
+19,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null
+20,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null
+21,OPIP PROCEDURE CHARGES,ARTERIAL LINE,2,650.00,null,null
+22,OPIP PROCEDURE CHARGES,ARTERIAL LINE,2,650.00,null,null
+23,OPIP PROCEDURE CHARGES,CENTRAL LINE PLACEMENT,4,900.00,null,null
+-------------------------------------
+2024-10-13 02:41:24 - Function: gemini_ocr
+Execution Time: 5.125263 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'prompt': '\n\n\nyou are given a csv file here :{S.NO,Name,item_name,item_price,item_subcategory,sub_category_amount\n1,BED CHARGES,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00\n2,INVESTIGATION CHARGES,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00\n3,CONSULTATION,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00\n4,NURSING CHARGES,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00\n5,DOCTOR CHARGES,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00\n6,OPIP PROCEDURE CHARGES,CONSCIOUS SEDATION,1,130.00,null,null\n7,OPIP PROCEDURE CHARGES,CONSCIOUS SEDATION,1,130.00,null,null\n8,OPIP PROCEDURE CHARGES,CONSCIOUS SEDATION,1,130.00,null,null\n9,OPIP PROCEDURE CHARGES,CATHETERISATION,540.00,null,null\n10,OPIP PROCEDURE CHARGES,LUMBAR PUNCTURE,2,740.00,null,null\n11,OPIP PROCEDURE CHARGES,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,null,null\n12,OPIP PROCEDURE CHARGES,INSURANCE PROCESSING FEE,500.00,null,null\n13,OPIP PROCEDURE CHARGES,MRI BRAIN PLAIN,10,000.00,null,null\n14,OPIP PROCEDURE CHARGES,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,null,null\n15,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null\n16,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null\n17,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null\n18,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null\n19,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null\n20,OPIP PROCEDURE CHARGES,IV PLACEMENT CANNULATION,540.00,null,null\n21,OPIP PROCEDURE CHARGES,ARTERIAL LINE,2,650.00,null,null\n22,OPIP PROCEDURE CHARGES,ARTERIAL LINE,2,650.00,null,null\n23,OPIP PROCEDURE CHARGES,CENTRAL LINE PLACEMENT,4,900.00,null,null} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there named item_name,item_price,item_subcategory,sub_category_amount if not make it only these columns\n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount,confidence
+PICU BEDCHARGES.,202470.00,BED CHARGES,202470.00,95
+AUTOIMMUNE ENCEPHALITIS PANEL-CSF,23374.00,INVESTIGATION CHARGES,23374.00,95
+INTAL ASSESSMENT CHARGES,1000.00,CONSULTATION,1000.00,95
+PICU NURSING CHARGES,44030.00,NURSING CHARGES,44030.00,95
+PICU CONSULTATION CHARGES,52870.00,DOCTOR CHARGES,52870.00,95
+CONSCIOUS SEDATION,1130.00,null,null,95
+CONSCIOUS SEDATION,1130.00,null,null,95
+CONSCIOUS SEDATION,1130.00,null,null,95
+CATHETERISATION,540.00,null,null,95
+LUMBAR PUNCTURE,2740.00,null,null,95
+INFECTION PREVENTIVE MEASURE CHARGES,3680.00,null,null,95
+INSURANCE PROCESSING FEE,500.00,null,null,95
+MRI BRAIN PLAIN,10000.00,null,null,95
+MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18500.00,null,null,95
+IV PLACEMENT CANNULATION,540.00,null,null,95
+IV PLACEMENT CANNULATION,540.00,null,null,95
+IV PLACEMENT CANNULATION,540.00,null,null,95
+IV PLACEMENT CANNULATION,540.00,null,null,95
+IV PLACEMENT CANNULATION,540.00,null,null,95
+IV PLACEMENT CANNULATION,540.00,null,null,95
+ARTERIAL LINE,2650.00,null,null,95
+ARTERIAL LINE,2650.00,null,null,95
+CENTRAL LINE PLACEMENT,4900.00,null,null,95
+-------------------------------------
+2024-10-13 02:41:24 - Function: index
+Execution Time: 17.475313 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 02:41:24 - 127.0.0.1 - - [13/Oct/2024 02:41:24] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 02:42:27 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:42:31 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 02:42:31 - [33mPress CTRL+C to quit[0m
+2024-10-13 02:42:31 -  * Restarting with stat
+2024-10-13 02:42:42 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:42:45 -  * Debugger is active!
+2024-10-13 02:42:45 -  * Debugger PIN: 109-828-752
+2024-10-13 02:42:57 - Function: gemini_ocr
+Execution Time: 12.021009 seconds
+Arguments: ('uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTIAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 02:43:03 - Function: gemini_ocr
+Execution Time: 5.504069 seconds
+Arguments: () {'image_path': 'uploads\\DEL-0524-REF-0001366_E-MASTERESWARSAITEJESHFINALBILL_240529_1714@E.pdf_2.png', 'prompt': '\n\n\nyou are given a csv file here :{S.NO,Name,item_price,item_subcategory,sub_category_amount\n1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00\n2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00\n3,INTIAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00\n4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00\n5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00\n6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null\n9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null\n10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null\n11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null\n12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null\n13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null\n14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null\n15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null\n21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null\n23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there named item_name,item_price,item_subcategory,sub_category_amount if not make it only these columns\n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: S.NO,item_name,item_price,item_subcategory,sub_category_amount,confidence
+1,PICU BEDCHARGES.,202470.00,BED CHARGES,202470.00,95
+2,AUTOIMMUNE ENCEPHALITIS PANEL-CSF,23374.00,INVESTIGATION CHARGES,23374.00,95
+3,INTIAL ASSESSMENT CHARGES,1000.00,CONSULTATION,1000.00,95
+4,PICU NURSING CHARGES,44030.00,NURSING CHARGES,44030.00,95
+5,PICU CONSULTATION CHARGES,52870.00,DOCTOR CHARGES,52870.00,95
+6,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+7,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+8,CONSCIOUS SEDATION,1130.00,OPIP PROCEDURE CHARGES,null,75
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null,75
+10,LUMBAR PUNCTURE,2740.00,OPIP PROCEDURE CHARGES,null,75
+11,INFECTION PREVENTIVE MEASURE CHARGES,3680.00,OPIP PROCEDURE CHARGES,null,75
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null,75
+13,MRI BRAIN PLAIN,10000.00,OPIP PROCEDURE CHARGES,null,75
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18500.00,OPIP PROCEDURE CHARGES,null,75
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null,75
+21,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+22,ARTERIAL LINE,2650.00,OPIP PROCEDURE CHARGES,null,75
+23,CENTRAL LINE PLACEMENT,4900.00,OPIP PROCEDURE CHARGES,null,75
+-------------------------------------
+2024-10-13 02:43:03 - Function: index
+Execution Time: 18.138540 seconds
+Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: <Response streamed [200 OK]>
+-------------------------------------
+2024-10-13 02:43:03 - 127.0.0.1 - - [13/Oct/2024 02:43:03] "POST /api/process HTTP/1.1" 200 -

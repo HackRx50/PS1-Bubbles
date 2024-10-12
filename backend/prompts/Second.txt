@@ -5,7 +5,7 @@ you are given a csv file here :{ocr1} and an image from which that csv is extarc
 
 you are genius at finding mistakes in a csv given the image of invoice from which csv is derived
 follow the intructions
-1. check only 4 columns should be there 
+1. check only 4 columns should be there named item_name,item_price,item_subcategory,sub_category_amount if not make it only these columns
 2. check csv against image , no duplicates or errors should be there 
 3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value
 4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name

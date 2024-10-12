@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from config.config import UPLOAD_FOLDER
 import json
-
+import numpy as np
 file_path = os.path.join(UPLOAD_FOLDER, 'extracted_text.csv')
 # print(file_path)
 def get_prompts(filename):
@@ -50,9 +50,14 @@ def calculate_subcategory_amounts(csv_rows):
 
         # Convert 'item_price' to numeric (handling potential errors)
         df['item_price'] = pd.to_numeric(df['item_price'], errors='coerce')
+        df['sub_category_amount'].replace('null', np.nan, inplace=True)
+
+        # Convert 'sub_category_amount' to numeric, handling potential errors
+        df['sub_category_amount'] = pd.to_numeric(df['sub_category_amount'], errors='coerce')
 
         # Handle missing values (e.g., NaN) by filling them with 0 for summation
         df['item_price'].fillna(0, inplace=True)
+        df['sub_category_amount'].fillna(0, inplace=True)
 
         # Group by 'item_subcategory' and sum the 'item_price' for each subcategory
         result = df.groupby('item_subcategory').agg(

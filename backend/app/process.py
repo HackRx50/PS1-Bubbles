@@ -68,8 +68,14 @@ def index():
                 csvfile.close()
             # with open(csv_filename, mode='r', newline='', encoding='utf-8') as csvreader:
             time.sleep(0.5)
-            print(calculate_subcategory_amounts(csv_rows))
-            
+            subcategory_json=calculate_subcategory_amounts(csv_rows)
+            csv_rows_json = convert_csv_rows_to_json(csv_rows)
+
+            final_json = {
+                "csv_rows_data": csv_rows_json,
+                "subcategory_data": subcategory_json
+            }
+            print(final_json)
             flash(f'Text extracted and saved to {csv_filename}')
             return send_file("../uploads/extracted_text.csv")
             # return redirect(url_for('process.index'))
