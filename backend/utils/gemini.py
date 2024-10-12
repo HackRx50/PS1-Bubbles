@@ -1,9 +1,10 @@
 from config.config import GEMINI_KEY
 import google.generativeai as genai
-
+from utils.decorators import time_it
 
 genai.configure(api_key=GEMINI_KEY)
 
+@time_it
 def gemini_ocr(image_path,prompt):
 
     """
