@@ -1,7 +1,8 @@
-
+import cv2
+import numpy as np
 from PIL import Image, ImageEnhance
 
-def sharpen_and_brighten(image_path, output_path, sharpness_factor=4, brightness_factor=1):
+def sharpen_and_brighten(image_path, output_path, sharpness_factor=2, brightness_factor=1):
     """
     Sharpen and brighten an image, then save the result to a file.
 
@@ -28,3 +29,19 @@ def sharpen_and_brighten(image_path, output_path, sharpness_factor=4, brightness
     img_brightened.save(output_path)
     
     print(f"Image processed and saved to {output_path}")
+
+
+
+def preprocess_image(image,output_path="./demo_processed.jpg"):
+    image = Image.open(image)
+    gray = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2GRAY)
+    gray = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
+    kernel = np.ones((1, 1), np.uint8)
+    gray = cv2.dilate(gray, kernel, iterations=1)
+    # return Image.fromarray(gray)
+    Image.fromarray(gray).save(output_path)
+    print(f"image processed and saved to {output_path}")
+
+if __name__ == "__main__":
+    sharpen_and_brighten(image_path="./sample/2.jpg", output_path="./demo_processed.jpg")
+
