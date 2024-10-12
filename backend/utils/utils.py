@@ -59,6 +59,16 @@ def calculate_subcategory_amounts(csv_rows):
             total_item_price=('item_price', 'sum'),
             sub_category_amount=('sub_category_amount', 'first')  # Assuming sub_category_amount is the same, take the first occurrence
         ).reset_index()
+
+        result['difference'] = result['total_item_price'] - result['sub_category_amount']
+
+        # Create a match field, set to True if total_item_price equals sub_category_amount, else False
+        # Also handle NaN values by treating them as non-matches
+        result['match'] = np.where(
+            result['total_item_price'].isna() | result['sub_category_amount'].isna(), 
+            False, 
+            result['total_item_price'] == result['sub_category_amount']
+        )
         result_dict = result.to_dict(orient='records')
 
     # Return as a JSON response
@@ -71,6 +81,15 @@ def calculate_subcategory_amounts(csv_rows):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return None
+
+
+def convert_csv_rows_to_json(csv_rows):
+    """Convert csv_rows into a list of dictionaries using the first row as headers."""
+    headers = csv_rows[0]  # First row is the header
+    data_rows = csv_rows[1:]  # Rest are data rows
+    csv_dict_list = [dict(zip(headers, row)) for row in data_rows]
+    return csv_dict_list
+
 
 if __name__ == "__main__":
     calculate_subcategory_amounts()

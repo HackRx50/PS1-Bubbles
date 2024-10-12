@@ -5,7 +5,7 @@ from PIL import Image
 import os
 import csv
 from utils.gemini import gemini_ocr
-from utils.utils import get_prompts,calculate_subcategory_amounts
+from utils.utils import get_prompts,calculate_subcategory_amounts,convert_csv_rows_to_json
 import time
 from config.config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
 from utils.decorators import time_it,log_api_runtime
