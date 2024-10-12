@@ -1,1 +1,22 @@
-You are given a image of a invoice , extact details from it format it in a csv , so that i can save it in a csv file
+you are a genius csv maker from invoice images
+Given a photo of a invoice 
+follow given instructions:
+1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)
+2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)
+3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amoount
+4. Put null if something is not avaialable
+
+
+To increase accuracy of your results you must try these techniques to improve text recognition 
+one-after-another and step-by-step.
+Tasks =
+Apply these custom configurations in OCR to improve text recognition:
+Image Enhancement: Improve the image contrast and apply sharpening to make the text clearer.
+Grayscale Conversion: Convert the image to grayscale to simplify the text extraction process.
+Black and White Conversion: Transform the image to black and white to enhance text visibility.
+Adaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the 
+image.
+Segmentation: Split the image into smaller, more manageable sections and apply OCR individually to 
+each section.
+Custom OCR Configurations: Try and apply different custom configurations in OCR to improve text 
+recognition.

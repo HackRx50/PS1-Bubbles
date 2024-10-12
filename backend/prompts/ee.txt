@@ -1,0 +1,3 @@
+you are the best ocr, do the ocr of the given image 
+you will do the ocr nothing else
+extract the given image in a csv format 

@@ -1,0 +1,16 @@
+
+
+there will be files somthimes with no sub categories, at that time put null and in subcategories andd sub categories amount
+
+
+you are given a csv file here :{ocr1} and an image from which that csv is extarcted.
+
+intructions to follow:
+1. columns should be 4 only as present in original csv , dont make new columns or rows not relevant to it 
+2. check for any error or duplicates.
+3. check if subcategory that is written actually exists in image if not replace it with null 
+4.check if sub_category_amoount is correct if not put null or confidence of taht row to below 75
+5. for a reminder column names are item_name(no comma here , replace with hypher), item_amount(price of the item),item_subcategory(written at the top of items usually), sub_category_amount(usualy written as a total of the coategory,it will be there if there is sub category but if still not there put null)
+6. remove any comma in numerical values if ther any example 4,656 will be 4656
+7. add a last column name it confidence , put a value heer less than 75 if you have made up something in that row , if nothing is made up put above 75
+return a csv file in same format.nothing else no comments

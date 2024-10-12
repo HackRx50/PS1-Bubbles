@@ -1,35 +1,36 @@
-import google.generativeai as genai
-import os
+from groq import Groq
+import base64
+from utils.utils import get_prompts
 
-genai.configure(api_key="AIzaSyCAzHIdUXBpC627ff2QdWyLDLqDMFCNdrY")
+# Function to encode the image
+def encode_image(image_path):
+  with open(image_path, "rb") as image_file:
+    return base64.b64encode(image_file.read()).decode('utf-8')
 
-myfile = genai.upload_file('sample\\1.png')
-print(f"{myfile=}")
+# Path to your image
+image_path = "./sample/demo.png"
 
-model = genai.GenerativeModel("gemini-1.5-flash")
-result = model.generate_content(
-    [myfile, "\n\n", "return data in the image in a structured csv format way so that i can save it in a csv file"]
+# Getting the base64 string
+base64_image = encode_image(image_path)
+
+client = Groq(api_key="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")
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": get_prompts("ee.txt")},
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/png;base64,{base64_image}",
+                    },
+                },
+            ],
+        }
+    ],
+    model="llava-v1.5-7b-4096-preview",
 )
-print(f"{result.text=}")
 
-# from PIL import Image, ImageEnhance
-
-# def sharpen_and_brighten(image_path, output_path, sharpness_factor=4, brightness_factor=1):
-#     # Open the image
-#     img = Image.open(image_path)
-    
-#     # Sharpen the image
-#     sharpener = ImageEnhance.Sharpness(img)
-#     img_sharpened = sharpener.enhance(sharpness_factor)
-    
-#     # Brighten the image
-#     brightener = ImageEnhance.Brightness(img_sharpened)
-#     img_brightened = brightener.enhance(brightness_factor)
-    
-#     # Save the result
-#     img_brightened.save(output_path)
-    
-#     print(f"Image processed and saved to {output_path}")
-
-# # Example usage
-# sharpen_and_brighten("sample\\1.png", "output_image.png")
+print(chat_completion.choices[0].message.content)

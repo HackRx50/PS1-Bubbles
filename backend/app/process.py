@@ -5,7 +5,7 @@ from PIL import Image
 import os
 import csv
 from utils.gemini import gemini_ocr
-from utils.utils import get_prompts
+from utils.utils import get_prompts,calculate_subcategory_amounts
 import time
 from config.config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
 from utils.decorators import time_it,log_api_runtime
@@ -46,9 +46,9 @@ def index():
             uploaded_file.save(filepath)
             
             # Extract text from the image using easyocr
-            extracted_text_easyocr = reader.readtext(filepath)
+            # extracted_text_easyocr = reader.readtext(filepath,detail=0)
             extracted_text_gemini = gemini_ocr(filepath, get_prompts('First.txt'))
-            final_text = gemini_ocr(image_path=filepath, prompt = get_prompts('Second.txt').replace("ocr1",str(extracted_text_easyocr)).replace("ocr2", str(extracted_text_gemini)))
+            final_text = gemini_ocr(image_path=filepath, prompt = get_prompts('Second.txt').replace("ocr1",str(extracted_text_gemini)))
             # Save extracted text to a CSV file
             lines = final_text.split('\n')  # Split text into lines
             csv_rows = [line.split(',') for line in lines]  # Split each line into columns
@@ -57,10 +57,15 @@ def index():
             csv_filename = os.path.join(UPLOAD_FOLDER, 'extracted_text.csv')
             with open(csv_filename, mode='w', newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
+                print(f"total number of rows are {len(csv_rows)}")
                 for row in csv_rows:
-                    writer.writerow(row)   # Corrected reference
+                    if any(cell.strip() and cell.strip() != 'null' for cell in row):
+                        writer.writerow(row)   # Corrected reference
                 csvfile.close()
+            # with open(csv_filename, mode='r', newline='', encoding='utf-8') as csvreader:
             time.sleep(0.5)
+            print(calculate_subcategory_amounts())
+            
             flash(f'Text extracted and saved to {csv_filename}')
             return send_file("../uploads/extracted_text.csv")
             # return redirect(url_for('process.index'))

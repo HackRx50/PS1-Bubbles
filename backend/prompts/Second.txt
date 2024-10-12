@@ -1,2 +1,16 @@
-You are given an image of invoice which is alreay processed by two ocr previosuly output of those ocr are ocr1: {ocr1} and ocr2: {ocr2}
-now with the help of image and previosuly processed data give me the best ocr of the image in a csv format so that i can save it in a csv,.only return csv no additional comments,also return numerical values without commas,the format that i want is item_name(is there are comma in this convert them in hyphen),item_amount,item_subcategory,sub_category_amoount(it is the total for that category that i denoted by total after a categoryis finished) , if anything is put null in place 
+
+
+
+you are given a csv file here :{ocr1} and an image from which that csv is extarcted.
+
+you are genius at finding mistakes in a csv given the image of invoice from which csv is derived
+follow the intructions
+1. check only 4 columns should be there 
+2. check csv against image , no duplicates or errors should be there 
+3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value
+4. numerical values should without comma example - 7,656 will be 7657 and there should n=be no comma in name also replace comma with hyphen in name
+5. thoroighly check sub_category_amoount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amoount with null for that category or add the item_price for that category and put less than 75 confidence
+6. return a csv only with only these columns , no comments
+
+Can you please carefully analyze the asset and transcribe it: it is very hard to read and you must 
+run multiple OCR carefully to get the perfect result we are looking for.
