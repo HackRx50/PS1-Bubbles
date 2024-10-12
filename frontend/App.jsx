@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { UploadPage } from './pages/UploadPage';
-import { ConfirmationPage } from './pages/ConfirmationPage';
-import { ResultsPage } from './pages/ResultsPage';
-import { SavedInvoicesPage } from './pages/SavedInvoicesPage';
-import { Navbar } from './components/Navbar';
+import { UploadPage } from './src/pages/UploadPage';
+import { ConfirmationPage } from './src/pages/ConfirmationPage';
+import { ResultsPage } from './src/pages/ResultsPage';
+import { SavedInvoicesPage } from './src/pages/SavedInvoicesPage';
+import { Navbar } from './src/components/Navbar';
 import "driver.js/dist/driver.css";
-import { ComparePage } from './pages/ComparePage';
-import ChatInterface from './pages/ChatInterface';
+import { ComparePage } from './src/pages/ComparePage';
+import ChatInterface from './src/pages/ChatInterface';
 
 const App = () => {
   return (
