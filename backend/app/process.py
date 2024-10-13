@@ -139,7 +139,7 @@ def index():
 
 @process_blueprint.route('/api/process-new', methods=['GET', 'POST'])
 @log_api_runtime
-def index():
+def index_new():
     if request.method == 'POST':
         # Check if a file was uploaded
         if 'file' not in request.files:

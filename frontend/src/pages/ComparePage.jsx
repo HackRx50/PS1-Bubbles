@@ -9,6 +9,7 @@ export const ComparePage = () => {
   const [fileContent, setFileContent] = useState(null);
   const [editedContent, setEditedContent] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
+  const [rowCount, setRowCount] = useState(-2);
 
   useEffect(() => {
     if (!file || !downloadUrl) {
@@ -24,6 +25,7 @@ export const ComparePage = () => {
           const content = e.target.result;
           setFileContent(content);
           setEditedContent(content);
+          setRowCount(Math.max(0, content.split('\n').length - 2));
         };
         reader.readAsText(blob);
       })
@@ -86,6 +88,7 @@ export const ComparePage = () => {
 
     return (
       <div className="overflow-x-auto">
+        <p className="text-gray-700 mb-2">Number of rows: {rowCount}</p>
         <table className="min-w-full bg-white">
           <tbody>{rows}</tbody>
         </table>

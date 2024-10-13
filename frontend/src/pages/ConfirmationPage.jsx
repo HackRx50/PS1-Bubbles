@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { ArrowRight, RefreshCw } from 'lucide-react';
+import { ArrowRight, RefreshCw, FileText, Image } from 'lucide-react';
 import ConfirmationPageTutorial from './ConfirmationPageTutorial.jsx';
-// import { Upload, ArrowRight, RefreshCw } from 'lucide-react';
 import axios from 'axios';
 
 export const ConfirmationPage = () => {
@@ -12,9 +11,21 @@ export const ConfirmationPage = () => {
   const [columns, setColumns] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [documentType, setDocumentType] = useState('');
+  const [filePreview, setFilePreview] = useState(null);
 
   // Assume the file object is passed through location state
   const file = location.state?.file;
+
+  useEffect(() => {
+    if (file) {
+      if (file.type.startsWith('image/')) {
+        setFilePreview(URL.createObjectURL(file));
+      } else if (file.type === 'application/pdf') {
+        // For PDF, we'll just show an icon
+        setFilePreview(null);
+      }
+    }
+  }, [file]);
 
   const handleReupload = () => {
     navigate('/');
@@ -29,23 +40,20 @@ export const ConfirmationPage = () => {
     formData.append('file', file);
     if (rows) formData.append('rows', rows);
     if (columns) formData.append('columns', columns);
+    if (documentType) formData.append('documentType', documentType);
 
     try {
-      const response = await axios.post('/api/process', formData, {
+      const response = await axios.post('http://127.0.0.1:5000/api/process', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         },
-        responseType: 'blob' // Important for receiving binary data
+        responseType: 'blob'
       });
 
-      // Create a Blob from the response data
       const blob = new Blob([response.data], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-      
-      // Create a download URL for the Excel file
       const downloadUrl = window.URL.createObjectURL(blob);
 
-      // Navigate to the ResultsPage with the download URL
-      navigate('/results', { state: { downloadUrl ,file} });
+      navigate('/results', { state: { downloadUrl, file } });
 
     } catch (error) {
       console.error('Error processing file:', error);
@@ -64,14 +72,21 @@ export const ConfirmationPage = () => {
     <div className="relative max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
       <ConfirmationPageTutorial />
       <div className="p-8 md:p-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">Confirm Invoice Upload</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Confirm Document Upload</h2>
         <div className="mb-8">
-          <img 
-            id="uploaded-image"
-            src={URL.createObjectURL(file)} 
-            alt="Uploaded Invoice" 
-            className="max-w-full h-auto rounded-lg shadow-md"
-          />
+          {file.type.startsWith('image/') ? (
+            <img 
+              id="uploaded-image"
+              src={filePreview}
+              alt="Uploaded Document" 
+              className="max-w-full h-auto rounded-lg shadow-md"
+            />
+          ) : (
+            <div className="flex items-center justify-center bg-gray-100 rounded-lg shadow-md h-64">
+              <FileText size={64} className="text-gray-400" />
+              <p className="ml-4 text-lg font-medium text-gray-600">{file.name}</p>
+            </div>
+          )}
         </div>
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <div>
@@ -130,7 +145,7 @@ export const ConfirmationPage = () => {
             className="flex-1 flex items-center justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             disabled={isLoading}
           >
-            {isLoading ? 'Processing...' : 'Process Invoice'}
+            {isLoading ? 'Processing...' : 'Process Document'}
             {!isLoading && <ArrowRight className="ml-2" size={20} />}
           </button>
         </div>

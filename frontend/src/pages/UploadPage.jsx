@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Upload, ArrowRight, Eye } from 'lucide-react'; // Import the Eye icon
+import { Upload, ArrowRight, Eye } from 'lucide-react';
 import TourGuide from '../pages/TourGuide.jsx';
 
 // Define themes for different types of color blindness
@@ -33,10 +33,9 @@ const themes = {
 
 export const UploadPage = () => {
   const [file, setFile] = useState(null);
-  const [theme, setTheme] = useState('default'); // State for managing theme
+  const [theme, setTheme] = useState('default');
   const navigate = useNavigate();
 
-  // Function to handle theme change
   const handleThemeChange = () => {
     const themeKeys = Object.keys(themes);
     const currentIndex = themeKeys.indexOf(theme);
@@ -57,13 +56,12 @@ export const UploadPage = () => {
 
   return (
     <div className={`max-w-4xl mx-auto ${themes[theme].background} rounded-2xl shadow-xl overflow-hidden relative`}>
-      {/* TourGuide component with eye icon for theme changing */}
       <div className="relative p-4">
         <TourGuide />
-        {/* Eye icon near the question mark */}
         <button
           onClick={handleThemeChange}
-          className="absolute top-4 right-16 bg-blue-500 p-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-10 h-10 flex items-center justify-center"          title="Change Theme"
+          className="absolute top-4 right-16 bg-blue-500 p-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-10 h-10 flex items-center justify-center"
+          title="Change Theme"
         >
           <Eye size={24} className="text-white" />
         </button>
@@ -75,17 +73,17 @@ export const UploadPage = () => {
         </div>
         <div className="p-8 md:p-12">
           <h2 className={`text-3xl font-bold ${themes[theme].text} mb-4`}>Upload Your Invoice</h2>
-          <p className={`${themes[theme].text} mb-8`}>Simply upload your invoice image, and we'll process it into a neat Excel sheet for you.</p>
+          <p className={`${themes[theme].text} mb-8`}>Upload your invoice image or PDF, and we'll process it into a neat Excel sheet for you.</p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="flex items-center justify-center w-full">
               <label className={`flex flex-col w-full h-32 border-4 border-dashed ${themes[theme].uploadArea} group upload-area`}>
                 <div className="flex flex-col items-center justify-center pt-7">
                   <Upload size={40} className="text-blue-400 group-hover:text-blue-600" />
                   <p className="pt-1 text-sm tracking-wider text-gray-400 group-hover:text-blue-600">
-                    {file ? file.name : "Attach your file"}
+                    {file ? file.name : "Attach your file (Image or PDF)"}
                   </p>
                 </div>
-                <input type="file" className="hidden" onChange={handleFileChange} accept="image/*" />
+                <input type="file" className="hidden" onChange={handleFileChange} accept="image/*,.pdf" />
               </label>
             </div>
             <button
