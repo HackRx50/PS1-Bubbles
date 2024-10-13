@@ -7084,3 +7084,840 @@ Request: {'method': 'POST', 'url': 'http://localhost:5000/api/process', 'data': 
 Response: <Response streamed [200 OK]>
 -------------------------------------
 2024-10-13 02:43:03 - 127.0.0.1 - - [13/Oct/2024 02:43:03] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 02:53:00 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:53:03 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 02:53:03 - [33mPress CTRL+C to quit[0m
+2024-10-13 02:53:03 -  * Restarting with stat
+2024-10-13 02:53:15 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:53:19 -  * Debugger is active!
+2024-10-13 02:53:19 -  * Debugger PIN: 109-828-752
+2024-10-13 02:53:19 - 127.0.0.1 - - [13/Oct/2024 02:53:19] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:20 - 127.0.0.1 - - [13/Oct/2024 02:53:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:21 - 127.0.0.1 - - [13/Oct/2024 02:53:21] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:21 - 127.0.0.1 - - [13/Oct/2024 02:53:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:23 - 127.0.0.1 - - [13/Oct/2024 02:53:23] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:23 - 127.0.0.1 - - [13/Oct/2024 02:53:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:24 - 127.0.0.1 - - [13/Oct/2024 02:53:24] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:24 - 127.0.0.1 - - [13/Oct/2024 02:53:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:26 - 127.0.0.1 - - [13/Oct/2024 02:53:26] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:27 - 127.0.0.1 - - [13/Oct/2024 02:53:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:28 - 127.0.0.1 - - [13/Oct/2024 02:53:28] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:29 - 127.0.0.1 - - [13/Oct/2024 02:53:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:30 - 127.0.0.1 - - [13/Oct/2024 02:53:30] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:30 - 127.0.0.1 - - [13/Oct/2024 02:53:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:32 - 127.0.0.1 - - [13/Oct/2024 02:53:32] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:33 - 127.0.0.1 - - [13/Oct/2024 02:53:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:34 - 127.0.0.1 - - [13/Oct/2024 02:53:34] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:34 - 127.0.0.1 - - [13/Oct/2024 02:53:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:38 - 127.0.0.1 - - [13/Oct/2024 02:53:38] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:39 - 127.0.0.1 - - [13/Oct/2024 02:53:39] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:41 - 127.0.0.1 - - [13/Oct/2024 02:53:41] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:43 - 127.0.0.1 - - [13/Oct/2024 02:53:43] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:43 - 127.0.0.1 - - [13/Oct/2024 02:53:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:45 - 127.0.0.1 - - [13/Oct/2024 02:53:45] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:45 - 127.0.0.1 - - [13/Oct/2024 02:53:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:53:48 - 127.0.0.1 - - [13/Oct/2024 02:53:48] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:53:48 - 127.0.0.1 - - [13/Oct/2024 02:53:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:54:34 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\test_route.py', reloading
+2024-10-13 02:54:36 -  * Restarting with stat
+2024-10-13 02:54:49 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 02:54:53 -  * Debugger is active!
+2024-10-13 02:54:53 -  * Debugger PIN: 109-828-752
+2024-10-13 02:54:54 - 127.0.0.1 - - [13/Oct/2024 02:54:54] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:54:54 - 127.0.0.1 - - [13/Oct/2024 02:54:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:54:56 - 127.0.0.1 - - [13/Oct/2024 02:54:56] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:54:57 - 127.0.0.1 - - [13/Oct/2024 02:54:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:54:57 - 127.0.0.1 - - [13/Oct/2024 02:54:57] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:54:58 - 127.0.0.1 - - [13/Oct/2024 02:54:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:54:59 - 127.0.0.1 - - [13/Oct/2024 02:54:59] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:54:59 - 127.0.0.1 - - [13/Oct/2024 02:54:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:00 - 127.0.0.1 - - [13/Oct/2024 02:55:00] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:01 - 127.0.0.1 - - [13/Oct/2024 02:55:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:01 - 127.0.0.1 - - [13/Oct/2024 02:55:01] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:02 - 127.0.0.1 - - [13/Oct/2024 02:55:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:03 - 127.0.0.1 - - [13/Oct/2024 02:55:03] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:03 - 127.0.0.1 - - [13/Oct/2024 02:55:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:04 - 127.0.0.1 - - [13/Oct/2024 02:55:04] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:05 - 127.0.0.1 - - [13/Oct/2024 02:55:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:06 - 127.0.0.1 - - [13/Oct/2024 02:55:06] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:07 - 127.0.0.1 - - [13/Oct/2024 02:55:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:08 - 127.0.0.1 - - [13/Oct/2024 02:55:08] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:09 - 127.0.0.1 - - [13/Oct/2024 02:55:09] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:12 - 127.0.0.1 - - [13/Oct/2024 02:55:12] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:12 - 127.0.0.1 - - [13/Oct/2024 02:55:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:13 - 127.0.0.1 - - [13/Oct/2024 02:55:13] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:13 - 127.0.0.1 - - [13/Oct/2024 02:55:13] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:13 - 127.0.0.1 - - [13/Oct/2024 02:55:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:15 - 127.0.0.1 - - [13/Oct/2024 02:55:15] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:16 - 127.0.0.1 - - [13/Oct/2024 02:55:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:16 - 127.0.0.1 - - [13/Oct/2024 02:55:16] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:16 - 127.0.0.1 - - [13/Oct/2024 02:55:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 02:55:17 - 127.0.0.1 - - [13/Oct/2024 02:55:17] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:21 - 127.0.0.1 - - [13/Oct/2024 02:55:21] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 02:55:21 - 127.0.0.1 - - [13/Oct/2024 02:55:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 03:09:33 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 03:09:37 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 03:09:37 - [33mPress CTRL+C to quit[0m
+2024-10-13 03:09:37 -  * Restarting with stat
+2024-10-13 03:09:48 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 03:09:52 -  * Debugger is active!
+2024-10-13 03:09:52 -  * Debugger PIN: 109-828-752
+2024-10-13 03:09:52 - 127.0.0.1 - - [13/Oct/2024 03:09:52] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 03:09:52 - 127.0.0.1 - - [13/Oct/2024 03:09:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 03:09:56 - 127.0.0.1 - - [13/Oct/2024 03:09:56] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 03:09:57 - 127.0.0.1 - - [13/Oct/2024 03:09:57] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 03:09:58 - 127.0.0.1 - - [13/Oct/2024 03:09:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 03:09:59 - 127.0.0.1 - - [13/Oct/2024 03:09:59] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 03:09:59 - 127.0.0.1 - - [13/Oct/2024 03:09:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 03:10:00 - 127.0.0.1 - - [13/Oct/2024 03:10:00] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 03:10:01 - 127.0.0.1 - - [13/Oct/2024 03:10:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 03:10:02 - 127.0.0.1 - - [13/Oct/2024 03:10:02] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 03:10:03 - 127.0.0.1 - - [13/Oct/2024 03:10:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 03:10:04 - 127.0.0.1 - - [13/Oct/2024 03:10:04] "GET /api/test HTTP/1.1" 200 -
+2024-10-13 03:10:04 - 127.0.0.1 - - [13/Oct/2024 03:10:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 03:10:06 - ratelimit 7 per 1 minute (127.0.0.1) exceeded at endpoint: test.api_test
+2024-10-13 03:10:06 - 127.0.0.1 - - [13/Oct/2024 03:10:06] "[31m[1mGET /api/test HTTP/1.1[0m" 429 -
+2024-10-13 03:10:07 - ratelimit 7 per 1 minute (127.0.0.1) exceeded at endpoint: test.api_test
+2024-10-13 03:10:07 - 127.0.0.1 - - [13/Oct/2024 03:10:07] "[31m[1mGET /api/test HTTP/1.1[0m" 429 -
+2024-10-13 03:10:08 - 127.0.0.1 - - [13/Oct/2024 03:10:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 05:28:50 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 05:28:54 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 05:28:54 - [33mPress CTRL+C to quit[0m
+2024-10-13 05:28:54 -  * Restarting with stat
+2024-10-13 05:29:05 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 05:29:10 -  * Debugger is active!
+2024-10-13 05:29:10 -  * Debugger PIN: 109-828-752
+2024-10-13 05:29:16 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 05:29:17 -  * Restarting with stat
+2024-10-13 05:29:29 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 05:29:33 -  * Debugger is active!
+2024-10-13 05:29:33 -  * Debugger PIN: 109-828-752
+2024-10-13 05:36:09 - Function: gemini_ocr
+Execution Time: 11.909186 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asst Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Pritl Arora Dhamji,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 05:36:16 - Function: gemini_ocr
+Execution Time: 6.720649 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,850.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 05:36:21 - Function: index
+Execution Time: 23.769080 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'```csv': 'item_name'}, {'```csv': 'Room Rent'}, {'```csv': 'Single (3X12000.0000)'}, {'```csv': 'Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>'}, {'```csv': 'Anaesthetist fees'}, {'```csv': 'OT charges'}, {'```csv': 'Investigation Charges'}, {'```csv': 'Drug Charges'}, {'```csv': 'Asst Surgeon Fee'}, {'```csv': 'Admission Charges'}, {'```csv': 'Pritl Arora Dhamji'}, {'```csv': 'Reeta Chawla'}, {'```csv': 'Nutrition'}, {'```csv': 'Poonam Mehrotra'}, {'```csv': 'Total Amount'}, {'```csv': 'PICU BEDCHARGES'}, {'```csv': 'AUTOIMMUNE ENCEPHALITIS PANEL-CSF'}, {'```csv': 'INTAL ASSESSMENT CHARGES'}, {'```csv': 'PICU NURSING CHARGES'}, {'```csv': 'PICU CONSULTATION CHARGES'}, {'```csv': 'CONSCIOUS SEDATION'}, {'```csv': 'CONSCIOUS SEDATION'}, {'```csv': 'CONSCIOUS SEDATION'}, {'```csv': 'CATHETERISATION'}, {'```csv': 'LUMBAR PUNCTURE'}, {'```csv': 'INFECTION PREVENTIVE MEASURE CHARGES'}, {'```csv': 'INSURANCE PROCESSING FEE'}, {'```csv': 'MRI BRAIN PLAIN'}, {'```csv': 'MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'ARTERIAL LINE'}, {'```csv': 'ARTERIAL LINE'}, {'```csv': 'CENTRAL LINE PLACEMENT'}, {'```csv': '```'}, {'```csv': ''}, {'```csv': '**Explanation:**'}, {'```csv': ''}, {'```csv': '1. **Column Standardization:**  The CSV is formatted to have only the four required columns: `item_name`'}, {'```csv': '2. **Data Cleaning:** '}, {'```csv': '    * Commas in `item_name` are replaced with hyphens.'}, {'```csv': '    * Commas are removed from numerical values (`item_price` and `sub_category_amount`).'}, {'```csv': '3. **Confidence Column:** '}, {'```csv': '    * A `confidence` column is added. Values above 75 indicate high confidence in the data. Values below 75 suggest potential issues or inconsistencies.'}, {'```csv': '4. **`sub_category_amount` Validation:**  '}, {'```csv': '    * For subcategories without a total in the image'}, {'```csv': '    * For subcategories without a total'}, {'```csv': '5. **Sorting:** The CSV is sorted to group items with the same `item_subcategory` together.'}, {'```csv': ''}, {'```csv': '**Important Considerations:**'}, {'```csv': ''}, {'```csv': '* **Image Verification:** The process relied heavily on comparing the CSV data with the corresponding image. Without the image'}, {'```csv': '* **Confidence Level:**  The confidence levels (75 and 70) are subjective. You might need to adjust these based on the specific data and your criteria for assessing data quality.'}, {'```csv': ''}, {'```csv': 'This combined and structured CSV addresses the requested tasks'}, {'```csv': ''}], 'subcategory_json': None}
+-------------------------------------
+2024-10-13 05:36:21 - 127.0.0.1 - - [13/Oct/2024 05:36:21] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 05:37:15 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 05:37:18 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 05:37:18 - [33mPress CTRL+C to quit[0m
+2024-10-13 05:37:18 -  * Restarting with stat
+2024-10-13 05:37:29 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 05:37:33 -  * Debugger is active!
+2024-10-13 05:37:33 -  * Debugger PIN: 109-828-752
+2024-10-13 05:37:44 - Function: gemini_ocr
+Execution Time: 10.917863 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asst Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Prit' Arora Dhamija,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 05:37:51 - Function: gemini_ocr
+Execution Time: 6.859547 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 05:37:56 - Function: index
+Execution Time: 22.391600 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'```csv': 'item_name'}, {'```csv': 'BED CHARGES'}, {'```csv': 'PICU BEDCHARGES.'}, {'```csv': 'INVESTIGATION CHARGES'}, {'```csv': 'AUTOIMMUNE ENCEPHALITIS PANEL'}, {'```csv': 'CONSULTATION'}, {'```csv': 'INTAL ASSESSMENT CHARGES'}, {'```csv': 'NURSING CHARGES'}, {'```csv': 'PICU NURSING CHARGES'}, {'```csv': 'DOCTOR CHARGES'}, {'```csv': 'PICU CONSULTATION CHARGES'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'CONSCIOUS SEDATION'}, {'```csv': 'CONSCIOUS SEDATION'}, {'```csv': 'CONSCIOUS SEDATION'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'CATHETERISATION'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'LUMBAR PUNCTURE'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'INFECTION PREVENTIVE MEASURE CHARGES'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'INSURANCE PROCESSING FEE'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'MRI BRAIN PLAIN'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'IV PLACEMENT CANNULATION'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'ARTERIAL LINE'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'ARTERIAL LINE'}, {'```csv': 'OPIP PROCEDURE CHARGES'}, {'```csv': 'CENTRAL LINE PLACEMENT'}, {'```csv': 'Room Rent'}, {'```csv': 'Single (3X12000.0000)'}, {'```csv': 'Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>'}, {'```csv': 'Anaesthetist fees'}, {'```csv': 'OT charges'}, {'```csv': 'Investigation Charges'}, {'```csv': 'Drug Charges'}, {'```csv': 'Asst Surgeon Fee'}, {'```csv': 'Admission Charges'}, {'```csv': "Prit' Arora Dhamija"}, {'```csv': 'Reeta Chawla'}, {'```csv': 'Nutrition'}, {'```csv': 'Poonam Mehrotra'}, {'```csv': 'Total Amount'}, {'```csv': '```'}], 'subcategory_json': None}
+-------------------------------------
+2024-10-13 05:37:56 - 127.0.0.1 - - [13/Oct/2024 05:37:56] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 05:43:05 - 127.0.0.1 - - [13/Oct/2024 05:43:05] "GET / HTTP/1.1" 200 -
+2024-10-13 05:43:05 - 127.0.0.1 - - [13/Oct/2024 05:43:05] "[36mGET /assets/index-gqYtJVAx.css HTTP/1.1[0m" 304 -
+2024-10-13 05:43:05 - 127.0.0.1 - - [13/Oct/2024 05:43:05] "[36mGET /assets/index-DmGivMUQ.js HTTP/1.1[0m" 304 -
+2024-10-13 06:03:16 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 06:03:18 -  * Restarting with stat
+2024-10-13 06:03:31 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:03:35 -  * Debugger is active!
+2024-10-13 06:03:35 -  * Debugger PIN: 109-828-752
+2024-10-13 06:03:40 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 06:03:42 -  * Restarting with stat
+2024-10-13 06:03:53 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:03:57 -  * Debugger is active!
+2024-10-13 06:03:57 -  * Debugger PIN: 109-828-752
+2024-10-13 06:03:59 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 06:04:00 -  * Restarting with stat
+2024-10-13 06:04:12 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:04:16 -  * Debugger is active!
+2024-10-13 06:04:16 -  * Debugger PIN: 109-828-752
+2024-10-13 06:04:27 - Function: gemini_ocr
+Execution Time: 11.587416 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asst Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Pritt Arora Dhamji,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 06:04:34 - Function: gemini_ocr
+Execution Time: 7.184184 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 06:04:37 - Function: index
+Execution Time: 21.891840 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'': 'item_name'}, {'': 'BED CHARGES'}, {'': 'INVESTIGATION CHARGES'}, {'': 'CONSULTATION'}, {'': 'NURSING CHARGES'}, {'': 'DOCTOR CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'Room Rent'}, {'': 'Single (3X12000.0000)'}, {'': 'Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>'}, {'': 'Anaesthetist fees'}, {'': 'OT charges'}, {'': 'Investigation Charges'}, {'': 'Drug Charges'}, {'': 'Asst Surgeon Fee'}, {'': 'Admission Charges'}, {'': 'Pritt Arora Dhamji'}, {'': 'Reeta Chawla'}, {'': 'Nutrition'}, {'': 'Poonam Mehrotra'}, {'': 'Total Amount'}, {'': ''}], 'subcategory_json': None}
+-------------------------------------
+2024-10-13 06:04:37 - 127.0.0.1 - - [13/Oct/2024 06:04:37] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 06:07:33 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\utils\\utils.py', reloading
+2024-10-13 06:07:34 -  * Restarting with stat
+2024-10-13 06:07:46 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:07:49 -  * Debugger is active!
+2024-10-13 06:07:50 -  * Debugger PIN: 109-828-752
+2024-10-13 06:08:01 - Function: gemini_ocr
+Execution Time: 11.587156 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asst Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Priti Arora Dhamija,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 06:08:08 - Function: gemini_ocr
+Execution Time: 7.168449 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 06:08:12 - Function: index
+Execution Time: 21.997886 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'': 'item_name'}, {'': 'Room Rent'}, {'': 'Single (3X12000.0000)'}, {'': 'Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>'}, {'': 'Anaesthetist fees'}, {'': 'OT charges'}, {'': 'Investigation Charges'}, {'': 'Drug Charges'}, {'': 'Asst Surgeon Fee'}, {'': 'Admission Charges'}, {'': 'Priti Arora Dhamija'}, {'': 'Reeta Chawla'}, {'': 'Nutrition'}, {'': 'Poonam Mehrotra'}, {'': 'Total Amount'}, {'': 'PICU BEDCHARGES.'}, {'': 'AUTOIMMUNE ENCEPHALITIS PANEL-CSF'}, {'': 'INTAL ASSESSMENT CHARGES'}, {'': 'PICU NURSING CHARGES'}, {'': 'PICU CONSULTATION CHARGES'}, {'': 'CONSCIOUS SEDATION'}, {'': 'CONSCIOUS SEDATION'}, {'': 'CONSCIOUS SEDATION'}, {'': 'CATHETERISATION'}, {'': 'LUMBAR PUNCTURE'}, {'': 'INFECTION PREVENTIVE MEASURE CHARGES'}, {'': 'INSURANCE PROCESSING FEE'}, {'': 'MRI BRAIN PLAIN'}, {'': 'MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'ARTERIAL LINE'}, {'': 'ARTERIAL LINE'}, {'': 'CENTRAL LINE PLACEMENT'}, {'': ''}], 'subcategory_json': None}
+-------------------------------------
+2024-10-13 06:08:12 - 127.0.0.1 - - [13/Oct/2024 06:08:12] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 06:09:30 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\utils\\utils.py', reloading
+2024-10-13 06:09:31 -  * Restarting with stat
+2024-10-13 06:09:42 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:09:46 -  * Debugger is active!
+2024-10-13 06:09:46 -  * Debugger PIN: 109-828-752
+2024-10-13 06:09:58 - Function: gemini_ocr
+Execution Time: 11.226137 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asst Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Pritl Arora Dhamilja,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 06:10:04 - Function: gemini_ocr
+Execution Time: 6.453509 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+
+-------------------------------------
+2024-10-13 06:10:07 - Function: index
+Execution Time: 21.227795 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'': 'item_name'}, {'': 'BED CHARGES'}, {'': 'Room Rent'}, {'': 'Single (3X12000.0000)'}, {'': 'Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>'}, {'': 'Anaesthetist fees'}, {'': 'OT charges'}, {'': 'INVESTIGATION CHARGES'}, {'': 'Investigation Charges'}, {'': 'CONSULTATION'}, {'': 'Drug Charges'}, {'': 'Asst Surgeon Fee'}, {'': 'Admission Charges'}, {'': 'Pritl Arora Dhamilja'}, {'': 'Reeta Chawla'}, {'': 'NURSING CHARGES'}, {'': 'Nutrition'}, {'': 'Poonam Mehrotra'}, {'': 'DOCTOR CHARGES'}, {'': 'Total Amount'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': 'OPIP PROCEDURE CHARGES'}, {'': ''}], 'subcategory_json': None}
+-------------------------------------
+2024-10-13 06:10:07 - 127.0.0.1 - - [13/Oct/2024 06:10:07] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 06:13:16 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 06:13:17 -  * Restarting with stat
+2024-10-13 06:13:29 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:13:32 -  * Debugger is active!
+2024-10-13 06:13:32 -  * Debugger PIN: 109-828-752
+2024-10-13 06:13:42 - Function: gemini_ocr
+Execution Time: 10.300028 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asset Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Pritt Arora Dhamija,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 06:13:49 - Function: gemini_ocr
+Execution Time: 6.180682 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INITAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,850.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+
+-------------------------------------
+2024-10-13 06:13:52 - Function: index
+Execution Time: 20.080385 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'': 'item_name'}, {'': 'Room Rent'}, {'': 'Single (3X12000.0000)'}, {'': 'Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>'}, {'': 'Anaesthetist fees'}, {'': 'OT charges'}, {'': 'Investigation Charges'}, {'': 'Drug Charges'}, {'': 'Asset Surgeon Fee'}, {'': 'Admission Charges'}, {'': 'Pritt Arora Dhamija'}, {'': 'Reeta Chawla'}, {'': 'Nutrition'}, {'': 'Poonam Mehrotra'}, {'': 'Total Amount'}, {'': 'PICU BEDCHARGES.'}, {'': 'AUTOIMMUNE ENCEPHALITIS PANEL'}, {'': 'INITAL ASSESSMENT CHARGES'}, {'': 'PICU NURSING CHARGES'}, {'': 'PICU CONSULTATION CHARGES'}, {'': 'CONSCIOUS SEDATION'}, {'': 'CONSCIOUS SEDATION'}, {'': 'CONSCIOUS SEDATION'}, {'': 'CATHETERISATION'}, {'': 'LUMBAR PUNCTURE'}, {'': 'INFECTION PREVENTIVE MEASURE CHARGES'}, {'': 'INSURANCE PROCESSING FEE'}, {'': 'MRI BRAIN PLAIN'}, {'': 'MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'IV PLACEMENT CANNULATION'}, {'': 'ARTERIAL LINE'}, {'': 'ARTERIAL LINE'}, {'': 'CENTRAL LINE PLACEMENT'}, {'': ''}], 'subcategory_json': None}
+-------------------------------------
+2024-10-13 06:13:52 - 127.0.0.1 - - [13/Oct/2024 06:13:52] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 06:18:24 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 06:18:25 -  * Restarting with stat
+2024-10-13 06:18:39 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:18:43 -  * Debugger is active!
+2024-10-13 06:18:43 -  * Debugger PIN: 109-828-752
+2024-10-13 06:18:45 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 06:18:46 -  * Restarting with stat
+2024-10-13 06:18:57 - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+2024-10-13 06:19:01 -  * Debugger is active!
+2024-10-13 06:19:01 -  * Debugger PIN: 109-828-752
+2024-10-13 06:19:12 - Function: gemini_ocr
+Execution Time: 11.253612 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asst Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Pritl Arora Dhamlija,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 06:19:19 - Function: gemini_ocr
+Execution Time: 6.855397 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,850.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+
+-------------------------------------
+2024-10-13 06:19:24 - Function: index
+Execution Time: 23.366251 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'item_name': 'BED CHARGES', 'item_price': '202470', 'item_subcategory': 'BED CHARGES', 'sub_category_amount': '202470', 'confidence': '95'}, {'item_name': 'PICU BEDCHARGES.', 'item_price': '202470', 'item_subcategory': 'BED CHARGES', 'sub_category_amount': '202470', 'confidence': '95'}, {'item_name': 'INVESTIGATION CHARGES', 'item_price': '23374', 'item_subcategory': 'INVESTIGATION CHARGES', 'sub_category_amount': '23374', 'confidence': '95'}, {'item_name': 'AUTOIMMUNE ENCEPHALITIS PANEL', 'item_price': 'CSF', 'item_subcategory': 'INVESTIGATION CHARGES', 'sub_category_amount': '23374', 'confidence': '95'}, {'item_name': 'CONSULTATION', 'item_price': '1000', 'item_subcategory': 'CONSULTATION', 'sub_category_amount': '1000', 'confidence': '95'}, {'item_name': 'INTAL ASSESSMENT CHARGES', 'item_price': '1000', 'item_subcategory': 'CONSULTATION', 'sub_category_amount': '1000', 'confidence': '95'}, {'item_name': 'NURSING CHARGES', 'item_price': '44030', 'item_subcategory': 'NURSING CHARGES', 'sub_category_amount': '44030', 'confidence': '95'}, {'item_name': 'PICU NURSING CHARGES', 'item_price': '44030', 'item_subcategory': 'NURSING CHARGES', 'sub_category_amount': '44030', 'confidence': '95'}, {'item_name': 'DOCTOR CHARGES', 'item_price': '52870', 'item_subcategory': 'DOCTOR CHARGES', 'sub_category_amount': '52870', 'confidence': '95'}, {'item_name': 'PICU CONSULTATION CHARGES', 'item_price': '52870', 'item_subcategory': 'DOCTOR CHARGES', 'sub_category_amount': '52870', 'confidence': '95'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'CONSCIOUS SEDATION', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'CONSCIOUS SEDATION', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'CONSCIOUS SEDATION', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'CATHETERISATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '2740', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'LUMBAR PUNCTURE', 'item_price': '2740', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '3680', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'INFECTION PREVENTIVE MEASURE CHARGES', 'item_price': '3680', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'INSURANCE PROCESSING FEE', 'item_price': '500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '10000', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'MRI BRAIN PLAIN', 'item_price': '10000', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '18500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING', 'item_price': '18500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '2650', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'ARTERIAL LINE', 'item_price': '2650', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '2850', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'ARTERIAL LINE', 'item_price': '2850', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '4900', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'CENTRAL LINE PLACEMENT', 'item_price': '4900', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'Room Rent', 'item_price': '36000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Single (3X12000.0000)', 'item_price': '28870', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Caesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>', 'item_price': 'null', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '50'}, {'item_name': 'Anaesthetist fees', 'item_price': '17322', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'OT charges', 'item_price': '20208', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Investigation Charges', 'item_price': '8000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Drug Charges', 'item_price': '25000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Asst Surgeon Fee', 'item_price': '8661', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Admission Charges', 'item_price': '350', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Pritl Arora Dhamlija', 'item_price': '9450', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Reeta Chawla', 'item_price': '4050', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Nutrition', 'item_price': '700', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Poonam Mehrotra', 'item_price': '800', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}, {'item_name': 'Total Amount', 'item_price': '159412', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '95'}], 'subcategory_json': '[{"item_subcategory": "BED CHARGES", "total_item_price": 404940.0, "sub_category_amount": 202470.0, "difference": 202470.0, "match": false}, {"item_subcategory": "CONSULTATION", "total_item_price": 2000.0, "sub_category_amount": 1000.0, "difference": 1000.0, "match": false}, {"item_subcategory": "DOCTOR CHARGES", "total_item_price": 105740.0, "sub_category_amount": 52870.0, "difference": 52870.0, "match": false}, {"item_subcategory": "INVESTIGATION CHARGES", "total_item_price": 23374.0, "sub_category_amount": 23374.0, "difference": 0.0, "match": true}, {"item_subcategory": "NURSING CHARGES", "total_item_price": 88060.0, "sub_category_amount": 44030.0, "difference": 44030.0, "match": false}, {"item_subcategory": "OPIP PROCEDURE CHARGES", "total_item_price": 101560.0, "sub_category_amount": 0.0, "difference": 101560.0, "match": false}, {"item_subcategory": "null", "total_item_price": 318823.0, "sub_category_amount": 0.0, "difference": 318823.0, "match": false}]'}
+-------------------------------------
+2024-10-13 06:19:24 - 127.0.0.1 - - [13/Oct/2024 06:19:24] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 08:40:38 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 08:40:38 - [33mPress CTRL+C to quit[0m
+2024-10-13 08:40:38 -  * Restarting with stat
+2024-10-13 08:40:49 -  * Debugger is active!
+2024-10-13 08:40:49 -  * Debugger PIN: 109-828-752
+2024-10-13 08:41:34 - Function: gemini_ocr
+Execution Time: 10.763973 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asset Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Pritl Arora Dhamija,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 08:41:40 - Function: gemini_ocr
+Execution Time: 6.317988 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,850.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 08:41:44 - Function: index
+Execution Time: 21.043293 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'item_name': 'Room Rent', 'item_price': '36000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Single (3X12000.0000)', 'item_price': '28870', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>', 'item_price': 'null', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'Anaesthetist fees', 'item_price': '17322', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'OT charges', 'item_price': '20208', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Investigation Charges', 'item_price': '8000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Drug Charges', 'item_price': '25000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Asset Surgeon Fee', 'item_price': '8661', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Admission Charges', 'item_price': '350', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Pritl Arora Dhamija', 'item_price': '9450', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Reeta Chawla', 'item_price': '4050', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Nutrition', 'item_price': '700', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Poonam Mehrotra', 'item_price': '800', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Total Amount', 'item_price': '159412', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'PICU BEDCHARGES.', 'item_price': '202470', 'item_subcategory': 'BED CHARGES', 'sub_category_amount': '202470', 'confidence': '90'}, {'item_name': 'AUTOIMMUNE ENCEPHALITIS PANEL-CSF', 'item_price': '23374', 'item_subcategory': 'INVESTIGATION CHARGES', 'sub_category_amount': '23374', 'confidence': '90'}, {'item_name': 'INTAL ASSESSMENT CHARGES', 'item_price': '1000', 'item_subcategory': 'CONSULTATION', 'sub_category_amount': '1000', 'confidence': '90'}, {'item_name': 'PICU NURSING CHARGES', 'item_price': '44030', 'item_subcategory': 'NURSING CHARGES', 'sub_category_amount': '44030', 'confidence': '90'}, {'item_name': 'PICU CONSULTATION CHARGES', 'item_price': '52870', 'item_subcategory': 'DOCTOR CHARGES', 'sub_category_amount': '52870', 'confidence': '90'}, {'item_name': 'CONSCIOUS SEDATION', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'CONSCIOUS SEDATION', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'CONSCIOUS SEDATION', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'CATHETERISATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'LUMBAR PUNCTURE', 'item_price': '2740', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'INFECTION PREVENTIVE MEASURE CHARGES', 'item_price': '3680', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'INSURANCE PROCESSING FEE', 'item_price': '500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'MRI BRAIN PLAIN', 'item_price': '10000', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING', 'item_price': '18500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'IV PLACEMENT CANNULATION', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'ARTERIAL LINE', 'item_price': '2650', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'ARTERIAL LINE', 'item_price': '2850', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}, {'item_name': 'CENTRAL LINE PLACEMENT', 'item_price': '4900', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '75'}], 'subcategory_json': '[{"item_subcategory": "BED CHARGES", "total_item_price": 202470.0, "sub_category_amount": 202470.0, "difference": 0.0, "match": true}, {"item_subcategory": "CONSULTATION", "total_item_price": 1000.0, "sub_category_amount": 1000.0, "difference": 0.0, "match": true}, {"item_subcategory": "DOCTOR CHARGES", "total_item_price": 52870.0, "sub_category_amount": 52870.0, "difference": 0.0, "match": true}, {"item_subcategory": "INVESTIGATION CHARGES", "total_item_price": 23374.0, "sub_category_amount": 23374.0, "difference": 0.0, "match": true}, {"item_subcategory": "NURSING CHARGES", "total_item_price": 44030.0, "sub_category_amount": 44030.0, "difference": 0.0, "match": true}, {"item_subcategory": "OPIP PROCEDURE CHARGES", "total_item_price": 52990.0, "sub_category_amount": 0.0, "difference": 52990.0, "match": false}, {"item_subcategory": "null", "total_item_price": 318823.0, "sub_category_amount": 0.0, "difference": 318823.0, "match": false}]', 'rows': 37}
+-------------------------------------
+2024-10-13 08:41:44 - 127.0.0.1 - - [13/Oct/2024 08:41:44] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 08:42:56 - Function: gemini_ocr
+Execution Time: 4.203026 seconds
+Arguments: () {'image_path': 'extracted_images\\image0.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: item_name,item_price,item_subcategory,sub_category_amount
+Room Rent,36000,null,null
+Single (3X12000.0000),28870,null,null
+Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>,null,null,null
+Anaesthetist fees,17322,null,null
+OT charges,20208,null,null
+Investigation Charges,8000,null,null
+Drug Charges,25000,null,null
+Asset Surgeon Fee,8661,null,null
+Admission Charges,350,null,null
+Pritl Arora Dhamija,9450,null,null
+Reeta Chawla,4050,null,null
+Nutrition,700,null,null
+Poonam Mehrotra,800,null,null
+Total Amount,159412,null,null
+-------------------------------------
+2024-10-13 08:43:03 - Function: gemini_ocr
+Execution Time: 6.855714 seconds
+Arguments: () {'image_path': 'extracted_images\\image1.jpeg', 'prompt': 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.'}
+Output: S.NO,Name,item_price,item_subcategory,sub_category_amount
+1,PICU BEDCHARGES.,2,02,470.00,BED CHARGES,2,02,470.00
+2,AUTOIMMUNE ENCEPHALITIS PANEL,CSF,23,374.00,INVESTIGATION CHARGES,23,374.00
+3,INTAL ASSESSMENT CHARGES,1,000.00,CONSULTATION,1,000.00
+4,PICU NURSING CHARGES,44,030.00,NURSING CHARGES,44,030.00
+5,PICU CONSULTATION CHARGES,52,870.00,DOCTOR CHARGES,52,870.00
+6,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+7,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+8,CONSCIOUS SEDATION,1,130.00,OPIP PROCEDURE CHARGES,null
+9,CATHETERISATION,540.00,OPIP PROCEDURE CHARGES,null
+10,LUMBAR PUNCTURE,2,740.00,OPIP PROCEDURE CHARGES,null
+11,INFECTION PREVENTIVE MEASURE CHARGES,3,680.00,OPIP PROCEDURE CHARGES,null
+12,INSURANCE PROCESSING FEE,500.00,OPIP PROCEDURE CHARGES,null
+13,MRI BRAIN PLAIN,10,000.00,OPIP PROCEDURE CHARGES,null
+14,MRI BRAIN PLAIN WITH WHOLE SPINE SCREENING,18,500.00,OPIP PROCEDURE CHARGES,null
+15,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+16,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+17,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+18,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+19,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+20,IV PLACEMENT CANNULATION,540.00,OPIP PROCEDURE CHARGES,null
+21,ARTERIAL LINE,2,650.00,OPIP PROCEDURE CHARGES,null
+22,ARTERIAL LINE,2,850.00,OPIP PROCEDURE CHARGES,null
+23,CENTRAL LINE PLACEMENT,4,900.00,OPIP PROCEDURE CHARGES,null
+-------------------------------------
+2024-10-13 08:43:07 - Function: index
+Execution Time: 15.034545 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows': [{'item_name': 'BED CHARGES', 'item_price': '202470', 'item_subcategory': 'BED CHARGES', 'sub_category_amount': '202470', 'confidence': '90'}, {'item_name': 'INVESTIGATION CHARGES', 'item_price': '23374', 'item_subcategory': 'INVESTIGATION CHARGES', 'sub_category_amount': '23374', 'confidence': '90'}, {'item_name': 'CONSULTATION', 'item_price': '1000', 'item_subcategory': 'CONSULTATION', 'sub_category_amount': '1000', 'confidence': '90'}, {'item_name': 'NURSING CHARGES', 'item_price': '44030', 'item_subcategory': 'NURSING CHARGES', 'sub_category_amount': '44030', 'confidence': '90'}, {'item_name': 'DOCTOR CHARGES', 'item_price': '52870', 'item_subcategory': 'DOCTOR CHARGES', 'sub_category_amount': '52870', 'confidence': '90'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '1130', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '2740', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '3680', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '10000', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '18500', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '540', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '2650', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '2850', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'OPIP PROCEDURE CHARGES', 'item_price': '4900', 'item_subcategory': 'OPIP PROCEDURE CHARGES', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'Room Rent', 'item_price': '36000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Single (3X12000.0000)', 'item_price': '28870', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Cesarean Section (Primary) ( category O&G-S087 ) <O&G-S087>', 'item_price': 'null', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '70'}, {'item_name': 'Anaesthetist fees', 'item_price': '17322', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'OT charges', 'item_price': '20208', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Investigation Charges', 'item_price': '8000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Drug Charges', 'item_price': '25000', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Asset Surgeon Fee', 'item_price': '8661', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Admission Charges', 'item_price': '350', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Pritl Arora Dhamija', 'item_price': '9450', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Reeta Chawla', 'item_price': '4050', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Nutrition', 'item_price': '700', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Poonam Mehrotra', 'item_price': '800', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}, {'item_name': 'Total Amount', 'item_price': '159412', 'item_subcategory': 'null', 'sub_category_amount': 'null', 'confidence': '90'}], 'subcategory_json': '[{"item_subcategory": "BED CHARGES", "total_item_price": 202470.0, "sub_category_amount": 202470.0, "difference": 0.0, "match": true}, {"item_subcategory": "CONSULTATION", "total_item_price": 1000.0, "sub_category_amount": 1000.0, "difference": 0.0, "match": true}, {"item_subcategory": "DOCTOR CHARGES", "total_item_price": 52870.0, "sub_category_amount": 52870.0, "difference": 0.0, "match": true}, {"item_subcategory": "INVESTIGATION CHARGES", "total_item_price": 23374.0, "sub_category_amount": 23374.0, "difference": 0.0, "match": true}, {"item_subcategory": "NURSING CHARGES", "total_item_price": 44030.0, "sub_category_amount": 44030.0, "difference": 0.0, "match": true}, {"item_subcategory": "OPIP PROCEDURE CHARGES", "total_item_price": 52990.0, "sub_category_amount": 0.0, "difference": 52990.0, "match": false}, {"item_subcategory": "null", "total_item_price": 318823.0, "sub_category_amount": 0.0, "difference": 318823.0, "match": false}]', 'rows': 37}
+-------------------------------------
+2024-10-13 08:43:07 - 127.0.0.1 - - [13/Oct/2024 08:43:07] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 08:43:44 - Function: gemini_ocr
+Execution Time: 6.918500 seconds
+Arguments: ('uploads\\sample.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: ```csv
+S.NO,item_name,item_price,item_subcategory,sub_category_amount
+87,ELECTROLYTES,1,230.00,null,null
+88,ELECTROLYTES,1,230.00,null,null
+89,ELECTROLYTES,1,230.00,null,null
+90,ELECTROLYTES,1,230.00,null,null
+91,ELECTROLYTES,1,230.00,null,null
+92,ELECTROLYTES,1,230.00,null,null
+93,ELECTROLYTES,1,230.00,null,null
+94,ELECTROLYTES,1,230.00,null,null
+95,ELECTROLYTES,1,230.00,null,null
+96,ELECTROLYTES,1,230.00,null,null
+97,ELECTROLYTES,1,230.00,null,null
+98,ELECTROLYTES,1,230.00,null,null
+99,ELECTROLYTES,1,230.00,null,null
+100,ELECTROLYTES,1,230.00,null,null
+101,ELECTROLYTES,1,230.00,null,null
+102,ELECTROLYTES,1,230.00,null,null
+103,ELECTROLYTES,1,230.00,null,null
+104,ELECTROLYTES,1,230.00,null,null
+105,ELECTROLYTES,1,230.00,null,null
+106,ELECTROLYTES,1,230.00,null,null
+107,ELECTROLYTES,1,230.00,null,null
+108,ELECTROLYTES,1,230.00,null,null
+109,ELECTROLYTES,1,230.00,null,null
+110,ELECTROLYTES,1,230.00,null,null
+111,ELECTROLYTES,1,230.00,null,null
+112,ELECTROLYTES,1,230.00,null,null
+113,ELECTROLYTES,1,230.00,null,null
+114,LIVER FUNCTION TEST,1,2090.00,null,null
+115,LIVER FUNCTION TEST,1,2090.00,null,null
+116,MAGNESIUM,1,1,420.00,null,null
+117,MAGNESIUM,1,1,420.00,null,null
+118,MAGNESIUM,1,1,420.00,null,null
+119,MAGNESIUM,1,1,1,810.00,null,null
+120,MAGNESIUM,1,1,810.00,null,null
+121,MAGNESIUM,1,1,810.00,null,null
+```
+-------------------------------------
+2024-10-13 08:43:50 - Function: gemini_ocr
+Execution Time: 6.042748 seconds
+Arguments: () {'image_path': 'uploads\\sample.png', 'prompt': '\n\n\nyou are given a csv file here :{```csv\nS.NO,item_name,item_price,item_subcategory,sub_category_amount\n87,ELECTROLYTES,1,230.00,null,null\n88,ELECTROLYTES,1,230.00,null,null\n89,ELECTROLYTES,1,230.00,null,null\n90,ELECTROLYTES,1,230.00,null,null\n91,ELECTROLYTES,1,230.00,null,null\n92,ELECTROLYTES,1,230.00,null,null\n93,ELECTROLYTES,1,230.00,null,null\n94,ELECTROLYTES,1,230.00,null,null\n95,ELECTROLYTES,1,230.00,null,null\n96,ELECTROLYTES,1,230.00,null,null\n97,ELECTROLYTES,1,230.00,null,null\n98,ELECTROLYTES,1,230.00,null,null\n99,ELECTROLYTES,1,230.00,null,null\n100,ELECTROLYTES,1,230.00,null,null\n101,ELECTROLYTES,1,230.00,null,null\n102,ELECTROLYTES,1,230.00,null,null\n103,ELECTROLYTES,1,230.00,null,null\n104,ELECTROLYTES,1,230.00,null,null\n105,ELECTROLYTES,1,230.00,null,null\n106,ELECTROLYTES,1,230.00,null,null\n107,ELECTROLYTES,1,230.00,null,null\n108,ELECTROLYTES,1,230.00,null,null\n109,ELECTROLYTES,1,230.00,null,null\n110,ELECTROLYTES,1,230.00,null,null\n111,ELECTROLYTES,1,230.00,null,null\n112,ELECTROLYTES,1,230.00,null,null\n113,ELECTROLYTES,1,230.00,null,null\n114,LIVER FUNCTION TEST,1,2090.00,null,null\n115,LIVER FUNCTION TEST,1,2090.00,null,null\n116,MAGNESIUM,1,1,420.00,null,null\n117,MAGNESIUM,1,1,420.00,null,null\n118,MAGNESIUM,1,1,420.00,null,null\n119,MAGNESIUM,1,1,1,810.00,null,null\n120,MAGNESIUM,1,1,810.00,null,null\n121,MAGNESIUM,1,1,810.00,null,null\n```} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there named item_name,item_price,item_subcategory,sub_category_amount if not make it only these columns\n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: ```csv
+item_name,item_price,item_subcategory,sub_category_amount,confidence
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+LIVER-FUNCTION-TEST,1,2090.00,null,99
+LIVER-FUNCTION-TEST,1,2090.00,null,99
+MAGNESIUM,1,1420.00,null,99
+MAGNESIUM,1,1420.00,null,99
+MAGNESIUM,1,1420.00,null,99
+MAGNESIUM,1,1810.00,null,99
+MAGNESIUM,1,1810.00,null,99
+MAGNESIUM,1,1810.00,null,99
+```
+-------------------------------------
+2024-10-13 08:43:50 - 127.0.0.1 - - [13/Oct/2024 08:43:50] "[35m[1mPOST /api/process HTTP/1.1[0m" 500 -
+2024-10-13 08:44:03 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 08:44:04 -  * Restarting with stat
+2024-10-13 08:44:15 -  * Debugger is active!
+2024-10-13 08:44:15 -  * Debugger PIN: 109-828-752
+2024-10-13 08:44:27 - Function: gemini_ocr
+Execution Time: 12.065406 seconds
+Arguments: ('uploads\\sample.png', 'you are a genius csv maker from invoice images\nGiven a photo of a invoice \nfollow given instructions:\n1. first identify if the invoice has sub categories (written at the top signifies that these items belongs in one group)\n2. identify if there is a total of that sub category (written at the end of category item also it is adjacent to a word total if the word total not there pul null)\n3. create a csv with 4 columns (not less not more) give the names, item_name,item_price,item_subcategory,sub_category_amount\n4. Put null if something is not avaialable\n\n\nTo increase accuracy of your results you must try these techniques to improve text recognition \none-after-another and step-by-step.\nTasks =\nApply these custom configurations in OCR to improve text recognition:\nImage Enhancement: Improve the image contrast and apply sharpening to make the text clearer.\nGrayscale Conversion: Convert the image to grayscale to simplify the text extraction process.\nBlack and White Conversion: Transform the image to black and white to enhance text visibility.\nAdaptive Thresholding: Use adaptive thresholding to handle varying lighting conditions within the \nimage.\nSegmentation: Split the image into smaller, more manageable sections and apply OCR individually to \neach section.\nCustom OCR Configurations: Try and apply different custom configurations in OCR to improve text \nrecognition.') {}
+Output: ```csv
+S.NO,Name,item_price,item_subcategory,sub_category_amount
+87,ELECTROLYTES,1,230.00,null,null
+88,ELECTROLYTES,1,230.00,null,null
+89,ELECTROLYTES,1,230.00,null,null
+90,ELECTROLYTES,1,230.00,null,null
+91,ELECTROLYTES,1,230.00,null,null
+92,ELECTROLYTES,1,230.00,null,null
+93,ELECTROLYTES,1,230.00,null,null
+94,ELECTROLYTES,1,230.00,null,null
+95,ELECTROLYTES,1,230.00,null,null
+96,ELECTROLYTES,1,230.00,null,null
+97,ELECTROLYTES,1,230.00,null,null
+98,ELECTROLYTES,1,230.00,null,null
+99,ELECTROLYTES,1,230.00,null,null
+100,ELECTROLYTES,1,230.00,null,null
+101,ELECTROLYTES,1,230.00,null,null
+102,ELECTROLYTES,1,230.00,null,null
+103,ELECTROLYTES,1,230.00,null,null
+104,ELECTROLYTES,1,230.00,null,null
+105,ELECTROLYTES,1,230.00,null,null
+106,ELECTROLYTES,1,230.00,null,null
+107,ELECTROLYTES,1,230.00,null,null
+108,ELECTROLYTES,1,230.00,null,null
+109,ELECTROLYTES,1,230.00,null,null
+110,ELECTROLYTES,1,230.00,null,null
+111,ELECTROLYTES,1,230.00,null,null
+112,ELECTROLYTES,1,230.00,null,null
+113,ELECTROLYTES,1,230.00,null,null
+114,LIVER FUNCTION TEST,1,2090.00,null,null
+115,LIVER FUNCTION TEST,1,2090.00,null,null
+116,MAGNESIUM,1,1,420.00
+117,MAGNESIUM,1,1,420.00
+118,MAGNESIUM,1,1,420.00
+119,MAGNESIUM,1,1,1,810.00
+120,MAGNESIUM,1,1,1,810.00
+121,MAGNESIUM,1,1,1,810.00
+```
+-------------------------------------
+2024-10-13 08:44:33 - Function: gemini_ocr
+Execution Time: 5.733620 seconds
+Arguments: () {'image_path': 'uploads\\sample.png', 'prompt': '\n\n\nyou are given a csv file here :{```csv\nS.NO,Name,item_price,item_subcategory,sub_category_amount\n87,ELECTROLYTES,1,230.00,null,null\n88,ELECTROLYTES,1,230.00,null,null\n89,ELECTROLYTES,1,230.00,null,null\n90,ELECTROLYTES,1,230.00,null,null\n91,ELECTROLYTES,1,230.00,null,null\n92,ELECTROLYTES,1,230.00,null,null\n93,ELECTROLYTES,1,230.00,null,null\n94,ELECTROLYTES,1,230.00,null,null\n95,ELECTROLYTES,1,230.00,null,null\n96,ELECTROLYTES,1,230.00,null,null\n97,ELECTROLYTES,1,230.00,null,null\n98,ELECTROLYTES,1,230.00,null,null\n99,ELECTROLYTES,1,230.00,null,null\n100,ELECTROLYTES,1,230.00,null,null\n101,ELECTROLYTES,1,230.00,null,null\n102,ELECTROLYTES,1,230.00,null,null\n103,ELECTROLYTES,1,230.00,null,null\n104,ELECTROLYTES,1,230.00,null,null\n105,ELECTROLYTES,1,230.00,null,null\n106,ELECTROLYTES,1,230.00,null,null\n107,ELECTROLYTES,1,230.00,null,null\n108,ELECTROLYTES,1,230.00,null,null\n109,ELECTROLYTES,1,230.00,null,null\n110,ELECTROLYTES,1,230.00,null,null\n111,ELECTROLYTES,1,230.00,null,null\n112,ELECTROLYTES,1,230.00,null,null\n113,ELECTROLYTES,1,230.00,null,null\n114,LIVER FUNCTION TEST,1,2090.00,null,null\n115,LIVER FUNCTION TEST,1,2090.00,null,null\n116,MAGNESIUM,1,1,420.00\n117,MAGNESIUM,1,1,420.00\n118,MAGNESIUM,1,1,420.00\n119,MAGNESIUM,1,1,1,810.00\n120,MAGNESIUM,1,1,1,810.00\n121,MAGNESIUM,1,1,1,810.00\n```} and an image from which that csv is extarcted.\n\nyou are genius at finding mistakes in a csv given the image of invoice from which csv is derived\nfollow the intructions\n1. check only 4 columns should be there named item_name,item_price,item_subcategory,sub_category_amount if not make it only these columns\n2. check csv against image , no duplicates or errors should be there \n3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value\n4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name\n5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence\n6. return a csv only with only these columns , no comments\n\nCan you please carefully analyze the asset and transcribe it: it is very hard to read and you must \nrun multiple OCR carefully to get the perfect result we are looking for.'}
+Output: ```csv
+item_name,item_price,item_subcategory,sub_category_amount,confidence
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+ELECTROLYTES,1,230.00,null,99
+LIVER-FUNCTION-TEST,1,2090.00,null,99
+LIVER-FUNCTION-TEST,1,2090.00,null,99
+MAGNESIUM,1,1420.00,null,99
+MAGNESIUM,1,1420.00,null,99
+MAGNESIUM,1,1420.00,null,99
+MAGNESIUM,1,1810.00,null,99
+MAGNESIUM,1,1810.00,null,99
+MAGNESIUM,1,1810.00,null,99
+```
+-------------------------------------
+2024-10-13 08:44:33 - Function: index
+Execution Time: 18.369094 seconds
+Request: {'method': 'POST', 'url': 'http://127.0.0.1:5000/api/process', 'data': None, 'args': {}, 'form': {}}
+Response: {'csv_rows_data': [{'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'ELECTROLYTES', 'item_price': '1', 'item_subcategory': '230.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'LIVER-FUNCTION-TEST', 'item_price': '1', 'item_subcategory': '2090.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'LIVER-FUNCTION-TEST', 'item_price': '1', 'item_subcategory': '2090.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'MAGNESIUM', 'item_price': '1', 'item_subcategory': '1420.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'MAGNESIUM', 'item_price': '1', 'item_subcategory': '1420.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'MAGNESIUM', 'item_price': '1', 'item_subcategory': '1420.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'MAGNESIUM', 'item_price': '1', 'item_subcategory': '1810.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'MAGNESIUM', 'item_price': '1', 'item_subcategory': '1810.00', 'sub_category_amount': 'null', 'confidence': '99'}, {'item_name': 'MAGNESIUM', 'item_price': '1', 'item_subcategory': '1810.00', 'sub_category_amount': 'null', 'confidence': '99'}], 'subcategory_data': '[{"item_subcategory": "1420.00", "total_item_price": 3, "sub_category_amount": 0.0, "difference": 3.0, "match": false}, {"item_subcategory": "1810.00", "total_item_price": 3, "sub_category_amount": 0.0, "difference": 3.0, "match": false}, {"item_subcategory": "2090.00", "total_item_price": 2, "sub_category_amount": 0.0, "difference": 2.0, "match": false}, {"item_subcategory": "230.00", "total_item_price": 28, "sub_category_amount": 0.0, "difference": 28.0, "match": false}]', 'rows': 36}
+-------------------------------------
+2024-10-13 08:44:33 - 127.0.0.1 - - [13/Oct/2024 08:44:33] "POST /api/process HTTP/1.1" 200 -
+2024-10-13 09:48:29 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 09:48:29 - [33mPress CTRL+C to quit[0m
+2024-10-13 09:48:29 -  * Restarting with stat
+2024-10-13 09:48:35 -  * Debugger is active!
+2024-10-13 09:48:35 -  * Debugger PIN: 109-828-752
+2024-10-13 10:01:00 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\hackerx\\backend\\app\\process.py', reloading
+2024-10-13 10:01:01 -  * Restarting with stat

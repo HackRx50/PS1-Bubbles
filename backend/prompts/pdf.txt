@@ -1,0 +1,15 @@
+
+
+
+you are given multiple csv files here one after another :{ocr1} 
+
+you are genius at make combine csv files
+follow the intructions
+1. check only 4 columns should be there named item_name,item_price,item_subcategory,sub_category_amount if not make it only these columns
+2. check csv against image , no duplicates or errors should be there 
+3. make a fifth column confidence add values less than 75 if you think that row is made up or some value is wrong in it , else put above 75 value
+4. numerical values should without comma example - 7,656 will be 7657 and there should be no comma in item_name also replace comma with hyphen in name
+5. thoroighly check sub_category_amount as something csv has wrong info there, check image if ther is no total for the sub category replace the data in sub_category_amount with null for that category or add the item_price for that category and put less than 75 confidence
+6. struture a new csv such that items with same item_subcategory should come one after another.
+7. return a csv only with only these columns , no comments or anything else other than csv , i need csv only
+

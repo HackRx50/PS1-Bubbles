@@ -1,36 +1,59 @@
-from groq import Groq
-import base64
-from utils.utils import get_prompts
+import fitz  # PyMuPDF
+import os
 
-# Function to encode the image
-def encode_image(image_path):
-  with open(image_path, "rb") as image_file:
-    return base64.b64encode(image_file.read()).decode('utf-8')
+def extract_images_from_pdf(pdf_path, output_folder='extracted_images'):
+    """
+    Extracts all images from a PDF and saves them to the specified folder.
+    
+    Args:
+        pdf_path (str): Path to the PDF file.
+        output_folder (str): Folder to save the extracted images. Default is 'extracted_images'.
+        
+    Returns:
+        List[str]: A list of filenames of the saved images.
+    """
+    # Ensure output directory exists
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
 
-# Path to your image
-image_path = "./sample/demo.png"
+    # Open the PDF file
+    doc = fitz.open(pdf_path)
+    count = 0
+    saved_images = []  # List to store the names of saved images
 
-# Getting the base64 string
-base64_image = encode_image(image_path)
+    # Loop through each page in the PDF
+    for page_num in range(len(doc)):
+        page = doc.load_page(page_num)
+        
+        # Get the list of images on the page
+        image_list = page.get_images(full=True)
+        
+        # Loop through all images found
+        for img_index, img in enumerate(image_list):
+            # Extract the image XREF
+            xref = img[0]
+            
+            # Extract the image bytes
+            base_image = doc.extract_image(xref)
+            image_bytes = base_image["image"]
+            
+            # Get the image extension (e.g. jpg, png)
+            image_ext = base_image["ext"]
+            
+            # Create the image filename and save it
+            image_filename = os.path.join(output_folder, f"image{count}.{image_ext}")
+            with open(image_filename, "wb") as image_file:
+                image_file.write(image_bytes)
+            
+            print(f"Saved {image_filename}")
+            saved_images.append(image_filename)  # Add the filename to the list
+            count += 1
 
-client = Groq(api_key="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")
+    doc.close()
+    
+    # Return the list of saved image filenames
+    return saved_images
 
-chat_completion = client.chat.completions.create(
-    messages=[
-        {
-            "role": "user",
-            "content": [
-                {"type": "text", "text": get_prompts("ee.txt")},
-                {
-                    "type": "image_url",
-                    "image_url": {
-                        "url": f"data:image/png;base64,{base64_image}",
-                    },
-                },
-            ],
-        }
-    ],
-    model="llava-v1.5-7b-4096-preview",
-)
-
-print(chat_completion.choices[0].message.content)
+# Example usage
+image_files = extract_images_from_pdf('sample.pdf')
+print("Saved images:", image_files)
